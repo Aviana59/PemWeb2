@@ -4,46 +4,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="assets/css/style.css">
     <title>Kelompok 2 MI22B</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <header>
-    <nav style="display: flex; ">
-        <li style="font-size: 24px; font-weight: bold;">
-            Alokasa
-        </li>
-        <li style="margin-left: auto;"><a href="home.html">Home</a></li>
-        <li><a href="#about">About</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="akun.html">Profile</a></li>
+    <img class="logo" src="aset/ALOKASA.png">
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="akun.html">Profile</a></li>
+        </ul>
     </nav>
-    <p>Save your moment</p>
-    <hr>
 </header>
 
 <body>
-    <div class="" style="padding: 0px 150px 0px 150px;">
-        <div id="about" style="text-align: center; margin-bottom: 10vh;">
-            <h2>Tentang Kami</h2>
-            <p>Alokasa adalah ruang untuk membuat linimasa pribadi dengan website.
+    <div class="wc">
+        <h2 class="title">Selamat datang di ALOKASA!!!</h2>
+        <p class="description">Website untuk membuat kreasi linimasa pribadi</p>
+    </div>
+    <hr>
+    <div class="isi">
+        <div class="sub" id="about">
+            <h2 class="subJudul">Tentang Kami</h2>
+            <p class="description">&emsp; &emsp; Alokasa adalah ruang untuk membuat linimasa pribadi dengan website.
                 Perbarui buku harianmu ke linimasa digital dengan sisipkan foto atau video.
                 Kamu bisa bebas membuat desain tampilan yang kamu suka disini. Simpan kenangan,
                 beberapa kenanganindah tidak akan pernah terulang lagi.
             </p>
         </div>
-        <div id="linimasa" style="text-align: center;">
-            <h2>Linimasa Kami</h2>
-            <div>
-                <img src="assets/images/kelasBDL.jpeg" height="35%" width="35%" style="border-radius: 10px;">
-                <br><small>Kelas Basis Data Lanjut
-                </small>
-                <br><small>Senin, 11 September 2023</small>
-            </div>
+        <div class="sub">
+            <h2 class="subJudul">Linimasa Kami</h2>
+            <img class="foto" src="kelasBDL.jpeg">
+            <p class="description">Kelas Basis Data Lanjut
+                <br> Senin, 11 September 2023
+            </p>
             <p><strong><em>Gambar ini digunakan sementara, harusnya berisi tentang perkembangan web</em></strong></p>
         </div>
-        <h2>Ulasan</h2>
-        <br> <em>(0) Belum ada ulasan</em>
+        <button class="rujukan">Buat linimasa anda sekarang</button>
+        <div class="sub">
+            <h2 class="subJudul">Ulasan</h2>
+            <br>
+            <em>(0) Belum ada ulasan</em>
+        </div>
     </div>
+
 </body>
 <footer>
     <div id="contact">
