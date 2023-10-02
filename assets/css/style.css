@@ -13,6 +13,6 @@ nav>li a {
     color: white;
     padding: 5px 10px;
     margin-left: 2vh;
-    background-color: tomato;
+    background-color: rgb(130, 205, 255);
     border-radius: 5px;
 }
