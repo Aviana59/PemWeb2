@@ -15,6 +15,7 @@ A. Sistem
    3. Tambah Deskripsi singkat
       Alokasa memiliki fitur deskripsi singkat untuk memberikan keterangan terhadap foto yang akan diupload sebagai penanda ataupun pengingat momen yang diabadikan dan disimpan arsip di alokasa.
    4. Kategori foto
+
 B. Pengguna
    1. Fungsi Upload Foto
       Pengguna dapat mengupload foto yang akan dijadikan arsip sebagai kenangan kenangan.
