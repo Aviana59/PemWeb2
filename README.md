@@ -33,6 +33,8 @@ Analisis pengguna sistem dimaksudkan untuk mengetahui siapa saja aktor yang terl
 Website ini dirancang untuk bisa diakses di web browser. Untuk itu diperlukan sebuah platform untuk mendukung pembuatan website ini. Platform yang digunakan untuk membuat website ini ada software VS Code dengan menggunakan HTML, CSS, dan Java Script untuk membuat tampilan website, blablabla untuk membuat program yang berjalan dibalik layar, serta blablabla untuk database sistem.
 
 ## Usecase Diagram
+https://github.com/Aviana59/PemWeb2/blob/master/use%20case.jpeg
+
 ## Activity Diagram
 ## Penjelasan Program
 
