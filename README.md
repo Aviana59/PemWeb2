@@ -60,6 +60,7 @@ File yang terupload : file yang telah diedit akan disimpan sementara sebelum kon
 Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat oleh publik.
 
 ## Activity Diagram
+![usecase](https://github.com/Aviana59/PemWeb2/blob/master/activity_diagram.png)
 ## Penjelasan Program
 
 
