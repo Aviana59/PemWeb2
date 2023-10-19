@@ -42,13 +42,21 @@ Jika memilih untuk melakukan upload lagi, maka akan mengulang proses-proses sebe
 ![usecase](https://github.com/Aviana59/PemWeb2/blob/master/use%20case.jpeg)
 
 Pengguna : Orang yang mengakses website, melakukan upload foto, memilih template, editing, menambahkan deskripsi, dan menentukan kategori foto tersebut.
+
 Admin : Merupakan orang yang melakukan pemeliharaan dan shutdown website jika diperlukan
+
 Server : Server berfungsi sebagai penyedia tampilan website, database penyimpan foto, penyedia template bingkai, dan media untuk menampilkan foto dari pengguna ke publik (jika user memilih opsi publikasi)
+
 Foto : Pengguna melakukan proses upload foto.proses ini dilakukan dalam bentuk form dimana pengguna akan memilih foto lewat file explorer mereka.
+
 Penambahan Deskripsi : Pengguna dapat menambah deskripsi pada foto untuk mengingat latar belakang dari foto tersebut sebagai kenang-kenangan (opsional)
+
 Penentuan Kategori : Pengguna juga memilih kategori dari foto tersebut untuk mempermudah melakukan navigasi pada arsip foto foto yang telah diupload
+
 Template dari Web : Pengguna disediakan dengan template dari server untuk digunakan sebagai bingkai.Setelah memilih template, pengguna dapat menyesuaikan foto dengan template agar terlihat bagus.
+
 File yang terupload : file yang telah diedit akan disimpan sementara sebelum konfirmasi upload agar pengguna dapat melihat seperti apa foto yang telah diubah (jika pengguna memakai template) beserta tampilan deskripsi dan kategori yang dipilih.
+
 Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat oleh publik.
 
 ## Activity Diagram
