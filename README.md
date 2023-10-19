@@ -61,6 +61,12 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 
 ## Activity Diagram
 ![usecase](https://github.com/Aviana59/PemWeb2/blob/master/activity_diagram.png)
+
 ## Penjelasan Program
+### Index
+### Index2
+### Login
+### Upload
+### CSS
 
 
