@@ -39,7 +39,7 @@ Proses dimulai dengan user mengupload foto pada form yang disediakan.Setelah fot
 Jika memilih untuk melakukan upload lagi, maka akan mengulang proses-proses sebelumnya.Lalu akan ada pemilihan kategori oleh user untuk mempermudah melakukan navigasi pada linimasa yang telah dibuat nantinya.Proses terakhir adalah pemilihan apakah user akan membuat foto foto yang telah diupload dapat diakses oleh publik atau tidak.Jika iya maka server akan mengonfirmasi dan membuat foto foto tersebut terbuka ke publik, jika tidak maka proses telah selesai.
 
 ## Usecase Diagram
-![usecase](https://github.com/Aviana59/PemWeb2/blob/master/use%20case.jpeg)
+![usecase](assets/images/use case.jpeg)
 
 Pengguna : Orang yang mengakses website, melakukan upload foto, memilih template, editing, menambahkan deskripsi, dan menentukan kategori foto tersebut.
 
