@@ -1,50 +1,56 @@
-// FONT
+/* Add Font*/
 @import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap");
-@font-face {
+/* @font-face {
   font-family: myfont;
   src: url(MerriweatherBold.ttf);
-}
+} */
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 html {
-  scroll-behavior: smooth;
+    scroll-behavior: smooth;
 }
+
 body {
-  font-family: "Merriweather", sans-serif;
+    font-family: "Merriweather", sans-serif;
 }
 
 .text-primary {
-  color: #2a324b;
+    color: #2a324b;
 }
+
 .text-seccondary {
-  color: #f7c59f;
+    color: #f7c59f;
 }
+
 .bg-primary {
-  background-color: #2a324b !important;
+    background-color: #2a324b !important;
 }
+
 .bg-transparent {
-  background-color: transparent !important;
+    background-color: transparent !important;
 }
 
 #header-text {
-  opacity: 0;
-  transform: translateX(-100px);
-  transition: 1.5s;
+    opacity: 0;
+    transform: translateX(-100px);
+    transition: 1.5s;
 }
 
 
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 .text-center {
-  text-align: center !important;
+    text-align: center !important;
 }
+
 header {
     background-color: rgb(183, 160, 204);
     color: rgb(255, 255, 255);
@@ -61,7 +67,7 @@ header {
     cursor: pointer;
 }
 
-.foto{
+.foto {
     width: 50%;
     height: 50%;
 }
@@ -73,11 +79,11 @@ nav ul {
 
 li {
     list-style-type: none;
-    padding: 25px 45px;  
+    padding: 25px 45px;
     font-weight: bold;
 }
 
-.wc{
+.wc {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -93,15 +99,17 @@ li {
     color: rgb(178, 126, 185);
     text-shadow: 3px 3px black;
 }
+
 .description {
     font-size: large;
     color: rgb(80, 51, 112);
 }
 
-.isi{
+.isi {
     margin: 25px;
 }
-.subJudul{
+
+.subJudul {
     font-size: 30px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: bold;
@@ -109,14 +117,14 @@ li {
     margin-bottom: 10px;
 }
 
-.sub{
+.sub {
     margin-top: 25px;
     margin-bottom: 25px;
     background-color: rgb(209, 198, 218);
     padding: 10px;
 }
 
-.rujukan{
+.rujukan {
     margin-left: 40%;
     border: none;
     font-size: 15px;
@@ -128,12 +136,13 @@ li {
     border-radius: 20px;
     cursor: pointer;
 }
-#rujukan:hover{
+
+#rujukan:hover {
     background-color: rgb(206, 199, 223);
     color: rgb(76, 48, 107);
 }
 
-footer{
+footer {
     background-color: rgb(183, 160, 204);
     color: rgb(76, 20, 150);
     text-align: center;
