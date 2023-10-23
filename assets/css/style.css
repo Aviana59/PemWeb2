@@ -175,3 +175,10 @@ input[type="checkbox"] {
   scale: 1.05;
   transition: 0.3 sec;
 }
+
+/* button animation */
+.button:hover {
+  box-shadow: rgba(0, 0, 0, 0.25) 0 8px 15px;
+  color: #e1e5ee;
+  background-color: #2a324b;
+}
