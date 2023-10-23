@@ -46,6 +46,7 @@ header {
   width: 100%;
   background-image: linear-gradient(#f7c59f, #e1e5ee);
   min-height: 66vh;
+  margin: 0;
 }
 
 a {
