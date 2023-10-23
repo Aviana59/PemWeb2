@@ -170,6 +170,44 @@ input[type="checkbox"] {
     flex-grow: 4;
 }
 
+.card {
+  transition: 0.3s;
+  background: #e1e5ee;
+  color: #2a324b;
+  border-radius: 10px;
+}
+.card > img {
+  border-radius: 10px 10px 0px 0px;
+}
+.container {
+  padding: 20px 30px;
+}
+.container > small {
+  font-size: 0.7em;
+}
+
+.linimasa-data > div {
+  margin: 20px;
+}
+.card-review {
+  padding: 10px;
+  transition: 0.3s;
+  background: #e1e5ee;
+  color: #2a324b;
+  border-radius: 10px;
+  max-width: 300px;
+}
+.comments {
+  padding: 20px;
+}
+.comments > p {
+  font-size: 0.8em;
+}
+
+.text-bold {
+  font-weight: 700;
+}
+
 .button {
     transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
     user-select: none;
