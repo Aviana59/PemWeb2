@@ -1,13 +1,50 @@
-*, html, body {
-    margin: 0;
-    padding: 15;
-    box-sizing: border-box;
+// FONT
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap");
+@font-face {
+  font-family: myfont;
+  src: url(MerriweatherBold.ttf);
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
 body {
-    background-color: rgb(231, 227, 240);
+  font-family: "Merriweather", sans-serif;
 }
 
+.text-primary {
+  color: #2a324b;
+}
+.text-seccondary {
+  color: #f7c59f;
+}
+.bg-primary {
+  background-color: #2a324b !important;
+}
+.bg-transparent {
+  background-color: transparent !important;
+}
+
+#header-text {
+  opacity: 0;
+  transform: translateX(-100px);
+  transition: 1.5s;
+}
+
+
+
+li {
+  list-style: none;
+}
+
+.text-center {
+  text-align: center !important;
+}
 header {
     background-color: rgb(183, 160, 204);
     color: rgb(255, 255, 255);
