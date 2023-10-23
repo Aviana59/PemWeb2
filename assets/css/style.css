@@ -61,3 +61,26 @@ li {
     color: white;
     border-radius: 5px;
 }
+
+.button-action {
+    padding: 8px 20px 8px 20px;
+    font-size: 12px;
+    font-family: "Merriweather";
+    font-weight: 400;
+    border: none;
+    background-color: #2a324b;
+    color: white;
+    border-radius: 4px;
+    margin: 5px;
+}
+
+.button-seccondary {
+    padding: 8px 20px 8px 20px;
+    font-size: 18px;
+    font-family: "Merriweather";
+    font-weight: 400;
+    border: none;
+    background-color: #f7c59f;
+    color: #2a324b;
+    border-radius: 5px;
+}
