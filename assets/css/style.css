@@ -139,3 +139,13 @@ footer{
     text-align: center;
     padding: 15px;
 }
+
+select {
+  display: flex;
+  flex-direction: row;
+}
+
+option {
+  display: inline-block;
+  margin: 0 10px;
+}
