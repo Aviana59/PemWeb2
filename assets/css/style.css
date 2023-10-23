@@ -41,8 +41,6 @@ body {
     transition: 1.5s;
 }
 
-
-
 li {
     list-style: none;
 }
@@ -106,6 +104,31 @@ li {
 /* LOGO */
 .logo {
     font-size: 32px;
+}
+
+/* NAVBAR MENU */
+.menu {
+  display: flex;
+  gap: 1em;
+  font-size: 18px;
+}
+.flex > secction > .content {
+  padding-left: 100px;
+  padding-right: 100px;
+}
+.menu li:hover {
+  background-color: #2a324b;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.menu li {
+  padding: 5px 14px;
+  transition: 0.3s;
+}
+
+input[type="checkbox"] {
+  display: none;
 }
 
 /* HAMBURGER MENU */
