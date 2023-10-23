@@ -135,3 +135,8 @@ li {
 .grow-4 {
     flex-grow: 4;
 }
+
+.button {
+    transition: all 500ms cubic-bezier(0.23, 1, 0.32, 1);
+    user-select: none;
+}
