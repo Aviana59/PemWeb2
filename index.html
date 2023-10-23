@@ -6,8 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
     <title>Alokasa</title>
 </head>
 
@@ -16,19 +18,19 @@
         <nav class="navbar">
             <!-- LOGO -->
             <div class="logo text-primary text-bold">Alokasa</div>
-        
+
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
-              <!-- USING CHECKBOX HACK -->
-              <input type="checkbox" id="checkbox_toggle" />
-              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        
-              <!-- NAVIGATION MENUS -->
-              <div class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>        
-                <li><a href="#contact">Contact</a></li>
-              </div>
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
             </ul>
             <button class="button-primary btn-signin">sign in</button>
         </nav>
@@ -37,15 +39,24 @@
             <h2>Karena moment, sulit diulang kembali</h2>
         </div>
     </header>
-    <main>
-        <div class="sub" id="about">
-            <h2 class="subJudul">Tentang Kami</h2>
-            <p class="description">&emsp; &emsp; Alokasa adalah ruang untuk membuat linimasa pribadi dengan website.
-                Perbarui buku harianmu ke linimasa digital dengan sisipkan foto atau video.
-                Kamu bisa bebas membuat desain tampilan yang kamu suka disini. Simpan kenangan,
-                beberapa kenanganindah tidak akan pernah terulang lagi.
-            </p>
-        </div>
+    <main style="padding: 20px;  margin-top: 70vh;">
+        <section class="flex" id="about">
+            <div style="margin: 20px;">
+                <img src="assets/images/asset.png" alt="" width="400vh"
+                    style="background-size: cover; border-radius: 10px">
+            </div>
+            <div class="grow-4 text-center" style="margin: 20px">
+                <div class="content" style="margin-top: 15vh;">
+                    <h1 style="font-size: 2em;">About Us</h1>
+                    <p style="font-weight: 1; font-size: 0.8em; margin-top: 5vh;">Alokasa hadir untuk membantu Anda
+                        mengabadikan momen-momen berharga dalam hidup Anda. Kami memahami bahwa setiap pengalaman
+                        memiliki nilai pribadi yang unik, dan itulah mengapa kami memberikan alat yang kuat untuk
+                        merangkumnya. Linimasa pribadi Anda adalah kanvas untuk mengungkapkan kreativitas Anda.</p>
+                </div>
+            </div>
+        </section>
+        <hr style="width: 70%; margin: auto;  margin-top: 10vh;">
+
         <div class="sub">
             <h2 class="subJudul">Linimasa Kami</h2>
             <img class="foto" src="assets/images/kelasBDL.jpeg">
@@ -55,7 +66,7 @@
             <p><strong><em>Gambar ini digunakan sementara, harusnya berisi tentang perkembangan web</em></strong></p>
         </div>
         <button class="rujukan">Buat linimasa anda sekarang</button>
-        
+
         <section style="padding: 20px; margin-top: 10vh;">
             <h1 style="font-size: 2em;">Review</h1>
             <div class="flex review-data" style="justify-content: space-evenly; margin-top: 5vh;">
@@ -95,7 +106,7 @@
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
                     </div>
                 </div>
-            </div>        
+            </div>
         </section>
     </main>
 
