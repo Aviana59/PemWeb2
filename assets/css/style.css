@@ -102,3 +102,8 @@ li {
 .nav-links a {
     color: #fff;
 }
+
+/* LOGO */
+.logo {
+    font-size: 32px;
+}
