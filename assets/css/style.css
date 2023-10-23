@@ -45,8 +45,7 @@ header {
   border-radius: 0px 0px 40px 40px;
   width: 100%;
   background-image: linear-gradient(#f7c59f, #e1e5ee);
-  min-height: 66vh;
-  margin: 0;
+  min-height: 50vh;
 }
 
 a {
