@@ -50,3 +50,14 @@ li {
 .text-center {
     text-align: center !important;
 }
+
+.button-primary {
+    padding: 8px 20px 8px 20px;
+    font-size: 18px;
+    font-family: "Merriweather";
+    font-weight: 400;
+    border: none;
+    background-color: #2a324b;
+    color: white;
+    border-radius: 5px;
+}
