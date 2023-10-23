@@ -25,23 +25,39 @@
         
               <!-- NAVIGATION MENUS -->
               <div class="menu">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#about">About</a></li>        
+                <li><a href="index.html">Home</a></li>        
                 <li><a href="#contact">Contact</a></li>
                 <li><a href="">Setting</a></li>
               </div>
             </ul>
         </nav>
     </header>
-    <h1 align="center">Upload Foto</h1>
-    <h2>Proses Upload foto</h2>
-    <p>Silahkan <b>upload foto</b> Anda pada tombol di bawah ini.</p>  
-
-    <form action="pilihan.html" method="post" enctype="multipart/form-data">
-        <input type="file" name="fileToUpload" id="fileToUpload">
-        <input type="submit" value="Selesai" name="submit">
-    </form>
-
-<a href="index.html">Kembali ke halaman awal</a>
+   <main>
+       <form action="upload.php" method="post" enctype="multipart/form-data">
+            <p>Masukkan foto/video yang ingin anda upload :</p>
+            <input type="file" name="foto/video" accept="image/*" accept="video/*">
+            <p>Masukkan tanggal :</p>
+            <input type="date" name="tanggal">
+            <p>Tambahkan judul :</p>
+            <input type="text" name="judul">
+            <p>Ceritakan momen anda disini :</p>
+            <input type="text" name="deskripsi">
+            <p>Dimana anda akan menambahkan momen ini?</p>
+            <select name="kategori">
+              <option value="1">Pendidikan</option>
+              <option value="2">Pekerjaan</option>
+              <option value="3">Keluarga</option>
+              <option value="4">Teman</option>
+              <option value="5">Hiburan</option>
+            </select>
+            <p>Sesuaikan tampilan </p>
+            <select name="template">
+                <option value="a">Default</option>
+                <option value="b">Cool</option>
+                <option value="c">Cute</option>
+              </select>
+            <a href="index2.html"><button><input type="submit" value="Upload"></button></a>
+          </form>
+   </main>
 </body>
 </html>
