@@ -64,6 +64,10 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 
 ## Penjelasan Program
 ### Index
+#### Tag Head
+Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather dan Poppins.
+
+Kode HTML ini akan menghasilkan halaman web dengan judul "Alokasa" dan dengan font Merriweather dan Poppins.
 ### Index2
 ### Login
 ### Upload
