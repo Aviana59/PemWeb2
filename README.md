@@ -64,11 +64,8 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 
 ## Penjelasan Program
 ### Index
-
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
+#### Tag Head
+- Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather dan Poppins.
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -77,20 +74,25 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <title>Alokasa</title>
-</head>
+        
+- Kode HTML ini akan menghasilkan halaman web dengan judul "Alokasa" dan dengan font Merriweather dan Poppins.
+   <title>Alokasa</title>
 
-<body>
-    <header class="text-center" style="top: 0; position: absolute;">
-        <nav class="navbar bg-transparent" id="navbar">
-            <div class="logo text-primary text-bold" id="logo">Alokasa</div>
+#### Tag Body
+- Kode HTML ini untuk mengatur di style.css
+<header class="text-center" style="top: 0; position: absolute;"> // tag header digunakan untuk membuat sebuah header untuk dokumen atau bagian
+        <nav class="navbar bg-transparent" id="navbar"> // tag nav untuk membuat navigation bar
+            <div class="logo text-primary text-bold" id="logo">Alokasa</div> // tag div membuat sebuah bagian dalam dokumen
 
-            <!-- NAVIGATION MENU -->
+- Kode HTML ini untuk membuat navigation menu menggunakan hamburger menu toggle pada layar kecil
+<!-- NAVIGATION MENU -->
             <ul class="nav-links">
+               // tampilan navigation menu pada layar kecil
                 <!-- USING CHECKBOX HACK -->
                 <input type="checkbox" id="checkbox_toggle" />
                 <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
 
+                //tampilan navigation menu pada layar besar
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
                     <li><a href="#home">Home</a></li>
@@ -98,14 +100,18 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
                     <li><a href="#contact">Contact</a></li>
                 </div>
             </ul>
+
+- Kode HTML ini untuk mengarahkan tombol sign in pada halaman index ke halaman sign in
             <a href="signin.html" class="button-primary btn-signin">Sign In</a>
-        </nav>
-        <div class="content text-primary" id="header-text" style="margin-top: 20vh; padding: 50px;">
+
+- Kode HTML ini untuk membuat sub judul
+<div class="content text-primary" id="header-text" style="margin-top: 20vh; padding: 50px;">
             <h2 style="font-size: 3em;">Simpan kenangan indah anda</h2>
             <h3>Karena moment, sulit diulang kembali</h3>
         </div>
-    </header>
-    <main style="padding: 20px;  margin-top: 50vh;">
+
+- Kode HTML ini untuk mengatur style di style.css
+<main style="padding: 20px;  margin-top: 50vh;">
         <section class="flex" id="about">
             <div style="margin: 20px;">
                 <img src="assets/images/asset.png" alt="" width="400vh"
@@ -114,6 +120,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
             <div class="grow-4 text-center" style="margin: 20px">
                 <div class="content" style="margin-top: 15vh;">
                     <h1 style="font-size: 2em;">About Us</h1>
+                   // 	Tag <p> untuk membuat paragraf
                     <p style="font-weight: 1; font-size: 0.8em; margin-top: 5vh;">Alokasa hadir untuk membantu Anda
                         mengabadikan momen-momen berharga dalam hidup Anda. Kami memahami bahwa setiap pengalaman
                         memiliki nilai pribadi yang unik, dan itulah mengapa kami memberikan alat yang kuat untuk
@@ -123,7 +130,8 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
         </section>
         <hr style="width: 70%; margin: auto;  margin-top: 10vh;">
 
-        <section style="padding: 20px; margin-top: 10vh; position: relative;" id="linimasa">
+- Kode HTML ini untuk membuat tampilan linimasa dan mengatur kelas card di style.css
+<section style="padding: 20px; margin-top: 10vh; position: relative;" id="linimasa">
             <div class="flex" style="justify-content: space-between;">
                 <h1 style="font-size: 2em;">Linimasa</h1>
                 <a href="upload.html" class="button button-seccondary">Tambah linimasa &plus;</a>
@@ -175,7 +183,9 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
                 </div>
             </div>
         </section>
-        <section style="padding: 20px; margin-top: 10vh;">
+
+- Kode HTML ini untuk membuat tampilan review dan mengatur kelas comment di style.css
+<section style="padding: 20px; margin-top: 10vh;">
             <h1 style="font-size: 2em;">Review</h1>
             <div class="flex review-data" style="justify-content: space-evenly; margin-top: 5vh;">
                 <div class="card-review flex" style="align-items: center;">
@@ -218,72 +228,6 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
         </section>
     </main>
 
-    <footer>
-        <address>
-            <div id="contact" class="text-center">
-                <span><i class="email-symbol">&#x2709</i> alokasa@gmail.com</span><br>
-                <div class="instagram-symbol">
-                    <img src="https://cdn.icon-icons.com/icons2/2714/PNG/96/instagram_logo_thin_icon_171701.png"
-                        alt="logo instagram">
-                    <span>alokasa_official</span>
-                </div><br>
-                <div class="twitter-symbol">
-                    <img src="https://cdn.icon-icons.com/icons2/1143/PNG/96/twitterlogooutline_80724.png"
-                        alt="logo twitter">
-                    <span>alokasaofficial</span>
-                </div>
-            </div>
-        </address>
-    </footer>
-</body>
-
-</html>
-
-
-    // Animate Header text when open / reload browser
-    window.onload = function () {
-        document.getElementById('header-text').style.opacity = 1;
-        document.getElementById('header-text').style.transform = "translateX(0px)";
-    }
-
-    /* !TODO : Action to handle Navbar when user is scrolling */
-
-    // get current height
-    let currentHeight = window.pageYOffset;
-
-    // function when user is scrolling
-    window.onscroll = () => {
-        // get previous height
-        let prevHeight = window.pageYOffset;
-
-        if (currentHeight > 520) {
-            // handling navbar when scroll up by adding a class
-            document.getElementById('navbar').classList.add('bg-primary')
-            document.getElementById('navbar').classList.remove('bg-transparent')
-            document.getElementById('logo').classList.add('text-seccondary')
-            document.getElementById('logo').classList.remove('text-primary')
-            document.getElementById('hamburger').classList.add('text-seccondary')
-            document.getElementById('hamburger').classList.remove('text-primary')
-
-        } else if (currentHeight < 520) {
-            // handling navbar when scroll down by adding a class
-            document.getElementById('logo').classList.remove('text-seccondary')
-            document.getElementById('logo').classList.add('text-primary')
-            document.getElementById('hamburger').classList.remove('text-seccondary')
-            document.getElementById('hamburger').classList.add('text-primary')
-            document.getElementById('navbar').classList.remove('bg-primary')
-            document.getElementById('navbar').classList.add('bg-transparent')
-        }
-
-        // assign currentHeight with previous height
-        currentHeight = prevHeight;
-    }
-
-
-#### Tag Head
-Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather dan Poppins.
-
-Kode HTML ini akan menghasilkan halaman web dengan judul "Alokasa" dan dengan font Merriweather dan Poppins.
 ### Index2
 ### Login
 ### Upload
