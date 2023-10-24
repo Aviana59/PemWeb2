@@ -372,7 +372,6 @@ Index2.html memiliki komponen yang sama dengan index.html, pembedanya hanya terl
 ```
 ### Sign Up
 #### Tag Head
-#### Tag Head
 - Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather.
 ```
 <head>
