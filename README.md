@@ -325,6 +325,7 @@ Index2.html memiliki komponen yang sama dengan index.html, pembedanya hanya terl
 Tag head, header, dan footer pada file ini masih menggunakan source code yang sama dengan index2.html, yang membedakan pada bagian head yaitu title atau judul yang akan ditampilkan pada tab browser. Dan pada header, kalimat "Simpan kenangan indah anda Karena moment, sulit diulang kembali" diganti dengan "Abadikan moment Anda di sini". Sedangkan untuk footernya tida mengalami perubahan.
 
 #### Tag main
+```
 <main style="margin-top: 50vh;">    
        <form>
             <p>Masukkan foto/video yang ingin anda upload :</p>
@@ -356,6 +357,7 @@ Tag head, header, dan footer pada file ini masih menggunakan source code yang sa
           </form>
             <a href="index2.html"><button class="button-primary" style="align-item: right; padding: 15px; margin: 20px;">Upload</button></a>
    </main>
+```
 Bagian ini merupakan konten utama yang terdapat pada halaman upload. Berbentuk formulir yang menjadi media untuk melakukan unggahan baru pada linimasa dengan beberapa pertanyaan yang memiliki jenis inputan yang berbeda-beda serta satu button untuk menyelesaikan proses upload.
 
 ### CSS
