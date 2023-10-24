@@ -189,5 +189,14 @@
             document.getElementById('logo').classList.remove('text-primary')
             document.getElementById('hamburger').classList.add('text-seccondary')
             document.getElementById('hamburger').classList.remove('text-primary')
+
+        } else if (currentHeight < 520) {
+            // handling navbar when scroll down by adding a class
+            document.getElementById('logo').classList.remove('text-seccondary')
+            document.getElementById('logo').classList.add('text-primary')
+            document.getElementById('hamburger').classList.remove('text-seccondary')
+            document.getElementById('hamburger').classList.add('text-primary')
+            document.getElementById('navbar').classList.remove('bg-primary')
+            document.getElementById('navbar').classList.add('bg-transparent')
         }
     }
