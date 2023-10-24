@@ -478,5 +478,14 @@ Sourcode yang digunakan pada tag head dalam file ini masih sama dengan index.htm
 Header pada halaman ini hanya berisi tanda panah kiri yang merujuk kembali ke halaman home (index2.html) dan tulisan Setting.
 ##### main
 ### CSS
+- Kode CSS ini untuk mengimport font dari google
+```
+/* Add Font*/
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap");
 
+@font-face {
+  font-family: myfont;
+  src: url(MerriweatherBold.ttf);
+}
+```
 
