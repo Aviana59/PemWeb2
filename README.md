@@ -66,7 +66,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 ### Index
 #### Tag Head
 - Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather dan Poppins.
-  ```
+```
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
@@ -75,12 +75,12 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap"
         rel="stylesheet">
-   ```
+```
    
 - Kode HTML ini akan menghasilkan halaman web dengan judul "Alokasa" dan dengan font Merriweather dan Poppins.
-  ```
+```
    <title>Alokasa</title>
-  ```
+```
 
 #### Tag Body
 - Kode HTML ini untuk mengatur di style.css
@@ -110,9 +110,9 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 ```
 
 - Kode HTML ini untuk mengarahkan tombol sign in pada halaman index ke halaman sign in
-  ```
+```
             <a href="signin.html" class="button-primary btn-signin">Sign In</a>
-  ```
+```
   
 - Kode HTML ini untuk membuat sub judul
 ```
@@ -143,7 +143,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
             </div>
         </section>
         <hr style="width: 70%; margin: auto;  margin-top: 10vh;">
-   ```
+```
 
 - Kode HTML ini untuk membuat tampilan linimasa dan mengatur kelas card di style.css
 ```
@@ -200,6 +200,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
             </div>
         </section>
 ```
+
 - Kode HTML ini untuk membuat tampilan review dan mengatur kelas comment di style.css
 ```
 <section style="padding: 20px; margin-top: 10vh;">
