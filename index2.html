@@ -191,7 +191,7 @@
         // get previous height
         let prevHeight = window.pageYOffset;
 
-        if (currentHeight > 400) {
+        if (currentHeight > 350) {
             // handling navbar when scroll up by adding a class
             document.getElementById('navbar').classList.add('bg-primary')
             document.getElementById('navbar').classList.remove('bg-transparent')
@@ -200,7 +200,7 @@
             document.getElementById('hamburger').classList.add('text-seccondary')
             document.getElementById('hamburger').classList.remove('text-primary')
 
-        } else if (currentHeight < 400) {
+        } else if (currentHeight < 350) {
             // handling navbar when scroll down by adding a class
             document.getElementById('logo').classList.remove('text-seccondary')
             document.getElementById('logo').classList.add('text-primary')
