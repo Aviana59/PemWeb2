@@ -65,7 +65,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 ## Penjelasan Program
 ### Index
 #### Tag Head
-- Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather dan Poppins.
+- Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather.
 ```
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -77,7 +77,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
         rel="stylesheet">
 ```
    
-- Kode HTML ini akan menghasilkan halaman web dengan judul "Alokasa" dan dengan font Merriweather dan Poppins.
+- Kode HTML ini akan menghasilkan halaman web dengan judul "Alokasa" dan dengan font Merriweather.
 ```
    <title>Alokasa</title>
 ```
@@ -320,10 +320,31 @@ Index2.html memiliki komponen yang sama dengan index.html, pembedanya hanya terl
 
 ### Sign In
 #### Tag Head
+- Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather.
+```
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        * {
+            margin: 0;
+            font-family: "Merriweather";
+        }
+    </style>
+</head>
+```
 #### Tag Body
+
 ### Sign Up
 #### Tag Head
 #### Tag Body
+
 ### Upload
 #### Tag head, header, dan footer
 Tag head, header, dan footer pada file ini masih menggunakan source code yang sama dengan index2.html, yang membedakan pada bagian head yaitu title atau judul yang akan ditampilkan pada tab browser. Dan pada header, kalimat "Simpan kenangan indah anda Karena moment, sulit diulang kembali" diganti dengan "Abadikan moment Anda di sini". Sedangkan untuk footernya tida mengalami perubahan.
