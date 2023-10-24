@@ -45,7 +45,7 @@ header {
   border-radius: 0px 0px 40px 40px;
   width: 100%;
   background-image: linear-gradient(#f7c59f, #e1e5ee);
-  min-height: 50vh;
+  top: 0;
 }
 
 a {
@@ -301,24 +301,43 @@ input[type="checkbox"] {
 
 .instagram-symbol {
   width: fit-content;
-  height: 5px;
+  height: 20px;
   margin: auto;
+  margin-bottom:0;
   display: flex;
-}
-
-.instagram-symbol img {
-  width: 10px;
-  height: 10px;
 }
 
 .twitter-symbol {
   width: fit-content;
-  height: 5px;
-  margin: auto;
+  height: 15px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 0;
+  margin-bottom: 25px;
   display: flex;
 }
 
-.twitter-symbol img {
-  width: 10px;
-  height: 10px;
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 20px;
+}
+
+form p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+  background-color: #0609a8;
+  color: #fff;
+  cursor: pointer;
 }
