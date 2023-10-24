@@ -477,6 +477,37 @@ Sourcode yang digunakan pada tag head dalam file ini masih sama dengan index.htm
 ```
 Header pada halaman ini hanya berisi tanda panah kiri yang merujuk kembali ke halaman home (index2.html) dan tulisan Setting.
 ##### main
+```
+<main>
+        <div class="user">
+            <img src="assets/images/profile.png" alt="profile" width="150px">
+            <h2>Username</h2>
+        </div>
+        <div class="content-setting">
+            <div class="sub-setting">
+                <h4>Akun</h4>
+                <p style="font-size: 13px;">Notifikasi keamanan, ganti password</p>
+            </div>
+            <div class="sub-setting">
+                <h4>Privasi</h4>
+                <select name="privasi">
+                    <option value="a">Yang memiliki link bisa melihat</option>
+                    <option value="b">Tidak ada yang bisa melihat</option>
+                </select>
+            </div>
+            <div class="sub-setting">
+                <h4>Bahasa</h4>
+                <select name="bahasa">
+                    <option value="x">Bahasa Indonesia</option>
+                    <option value="y">Bahasa Inggris</option>
+                </select>
+            </div>
+            <button class="button button-primary" style="margin-top: 30px; margin-bottom: 50px;">Log Out</button>
+        </div>
+    </main>
+```
+Konten utama pada halaman ini terbagi menjadi tiga yaitu user. content-setting, dan log out. Class user berisi foto profil pengguna beserta usernamenya. Sedangkan class content-setting berisi apa saja yang bisa diatur oleh user pada website ini, yaitu Akun, Privasi, dan Bahasa. Halaman ini juga dilengkapi dengan tampilan button log out pada bagian paling bawah.
+
 ### CSS
 - Kode CSS ini untuk mengimport font dari google
 ```
