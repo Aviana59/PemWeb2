@@ -313,3 +313,27 @@ input[type="checkbox"] {
   display: flex;
 }
 
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  margin: 20px;
+}
+
+form p {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+form input,
+form select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+form input[type="submit"] {
+  background-color: #0609a8;
+  color: #fff;
+  cursor: pointer;
+}
