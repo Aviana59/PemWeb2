@@ -316,9 +316,16 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 ```
 
 ### Index2
+Index2.html memiliki komponen yang sama dengan index.html, pembedanya hanya terletak pada header tepatnya di navbar. Dimana pada index.html menu navbar terdiri dari Home, About, Contact serta terdapat button SignIn, sedangkan pada index2.html menu navbar terdiri dari Home, About, Contact, dan Setting. Tujuan dari dibuatnya file index2.html adalah untuk memanipulasi keadaan sebelum dan sesudah login.
+
 ### Sign In
 ### Sign Up
 ### Upload
+#### Tag head, header, dan footer
+Tag head, header, dan footer pada file ini masih menggunakan source code yang sama dengan index2.html, yang membedakan pada bagian head yaitu title atau judul yang akan ditampilkan pada tab browser. Dan pada header, kalimat "Simpan kenangan indah anda Karena moment, sulit diulang kembali" diganti dengan "Abadikan moment Anda di sini". Sedangkan untuk footernya tida mengalami perubahan.
+
+#### Tag main
+
 ### CSS
 
 
