@@ -325,6 +325,38 @@ Index2.html memiliki komponen yang sama dengan index.html, pembedanya hanya terl
 Tag head, header, dan footer pada file ini masih menggunakan source code yang sama dengan index2.html, yang membedakan pada bagian head yaitu title atau judul yang akan ditampilkan pada tab browser. Dan pada header, kalimat "Simpan kenangan indah anda Karena moment, sulit diulang kembali" diganti dengan "Abadikan moment Anda di sini". Sedangkan untuk footernya tida mengalami perubahan.
 
 #### Tag main
+<main style="margin-top: 50vh;">    
+       <form>
+            <p>Masukkan foto/video yang ingin anda upload :</p>
+            <input type="file" name="foto/video" accept="image/*" accept="video/*">
+            <p>Masukkan tanggal :</p>
+            <input type="date" name="tanggal">
+            <p>Tambahkan judul :</p>
+            <input type="text" name="judul">
+            <p>Ceritakan momen anda disini :</p>
+            <input type="text" name="deskripsi">
+            <p>Dimana anda akan menambahkan momen ini?</p>
+            <select name="kategori">
+              <option value="1">Pendidikan</option>
+              <option value="2">Pekerjaan</option>
+              <option value="3">Keluarga</option>
+              <option value="4">Teman</option>
+              <option value="5">Hiburan</option>
+            </select>
+            <p>Sesuaikan tampilan </p>
+            <select>
+              <option value="x">Default</option>
+              <option value="template1.png">
+                  <img src="assets/images/template1.png" alt="modernTech">
+              </option>
+              <option value="template2.png">
+                  <img src="assets/images/template2.png" alt="Simple">
+              </option>
+            </select>
+          </form>
+            <a href="index2.html"><button class="button-primary" style="align-item: right; padding: 15px; margin: 20px;">Upload</button></a>
+   </main>
+Bagian ini merupakan konten utama yang terdapat pada halaman upload. Berbentuk formulir yang menjadi media untuk melakukan unggahan baru pada linimasa dengan beberapa pertanyaan yang memiliki jenis inputan yang berbeda-beda serta satu button untuk menyelesaikan proses upload.
 
 ### CSS
 
