@@ -372,6 +372,26 @@ Index2.html memiliki komponen yang sama dengan index.html, pembedanya hanya terl
 ```
 ### Sign Up
 #### Tag Head
+#### Tag Head
+- Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather.
+```
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+        * {
+            margin: 0;
+            font-family: "Merriweather";
+        }
+    </style>
+</head>
+```
 #### Tag Body
 
 ### Upload
