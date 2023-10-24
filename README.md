@@ -115,12 +115,12 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
   ```
   
 - Kode HTML ini untuk membuat sub judul
-  ```
+```
 <div class="content text-primary" id="header-text" style="margin-top: 20vh; padding: 50px;">
             <h2 style="font-size: 3em;">Simpan kenangan indah anda</h2>
             <h3>Karena moment, sulit diulang kembali</h3>
         </div>
-   ```
+```
    
 - Kode HTML ini untuk mengatur style di style.css
 ```
@@ -133,6 +133,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
             <div class="grow-4 text-center" style="margin: 20px">
                 <div class="content" style="margin-top: 15vh;">
                     <h1 style="font-size: 2em;">About Us</h1>
+
                    // 	Tag <p> untuk membuat paragraf
                     <p style="font-weight: 1; font-size: 0.8em; margin-top: 5vh;">Alokasa hadir untuk membantu Anda
                         mengabadikan momen-momen berharga dalam hidup Anda. Kami memahami bahwa setiap pengalaman
