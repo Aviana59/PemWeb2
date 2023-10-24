@@ -390,6 +390,13 @@ Bagian ini merupakan konten utama yang terdapat pada halaman upload. Berbentuk f
 Sourcode yang digunakan pada tag head dalam file ini masih sama dengan index.html, yang menjadi pembeda adalah pada title yang diubah menjadi "Setting-Alokasa".
 #### Tag body
 ##### header 
+```
+<div class="bg-primary header-setting">
+        <a href="index2.html"><p style="font-size: 30px; color:white;">&#x2190</p></a>
+        <p>Setting</p>
+    </div>
+```
+Header pada halaman ini hanya berisi tanda panah kiri yang merujuk kembali ke halaman home (index2.html) dan tulisan Setting.
 ##### main
 ### CSS
 
