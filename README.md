@@ -316,7 +316,8 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 ```
 
 ### Index2
-### Login
+### Sign In
+### Sign Up
 ### Upload
 ### CSS
 
