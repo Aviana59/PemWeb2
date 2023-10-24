@@ -175,3 +175,19 @@
 
     // get current height
     let currentHeight = window.pageYOffset;
+
+    // function when user is scrolling
+    window.onscroll = () => {
+        // get previous height
+        let prevHeight = window.pageYOffset;
+
+        if (currentHeight > 520) {
+            // handling navbar when scroll up by adding a class
+            document.getElementById('navbar').classList.add('bg-primary')
+            document.getElementById('navbar').classList.remove('bg-transparent')
+            document.getElementById('logo').classList.add('text-seccondary')
+            document.getElementById('logo').classList.remove('text-primary')
+            document.getElementById('hamburger').classList.add('text-seccondary')
+            document.getElementById('hamburger').classList.remove('text-primary')
+        }
+    }
