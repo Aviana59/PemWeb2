@@ -12,28 +12,30 @@
 </head>
 
 <body>
-    <header class="text-center">
-        <nav class="navbar">
-            <!-- LOGO -->
-            <div class="logo text-primary text-bold">Alokasa</div>
-        
+     <header class="text-center" style="top: 0; position: absolute;">
+        <nav class="navbar bg-transparent" id="navbar">
+            <div class="logo text-primary text-bold" id="logo">Alokasa</div>
+
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
-              <!-- USING CHECKBOX HACK -->
-              <input type="checkbox" id="checkbox_toggle" />
-              <label for="checkbox_toggle" class="hamburger">&#9776;</label>
-        
-              <!-- NAVIGATION MENUS -->
-              <div class="menu">
-                <li><a href="index.html">Home</a></li>        
-                <li><a href="#contact">Contact</a></li>
-                <li><a href="">Setting</a></li>
-              </div>
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="index2.html">Home</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="">Setting</a></li>
+                </div>
             </ul>
         </nav>
-        <h2 class="content text-primary" style="margin-top: 20vh; padding: 50px;">Abadikan moment Anda di sini</h2>
+        <div class="content text-primary" id="header-text" style="margin-top: 20vh; padding: 50px;">
+            <h2 style="font-size: 3em;">Simpan kenangan indah anda</h2>
+            <h3>Karena moment, sulit diulang kembali</h3>
+        </div>
     </header>
-   <main style="margin-top: 10vh">    
+   <main style="margin-top: 50vh">    
        <form action="index2.html" method="post" enctype="multipart/form-data">
             <p>Masukkan foto/video yang ingin anda upload :</p>
             <input type="file" name="foto/video" accept="image/*" accept="video/*">
