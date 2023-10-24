@@ -340,7 +340,36 @@ Index2.html memiliki komponen yang sama dengan index.html, pembedanya hanya terl
 </head>
 ```
 #### Tag Body
+- Kode HTML ini untuk mengatur isi dari sign in. Berisi email/username dan password
+```
+<body>
+    <main class="flex space-between flex-center full-height padding-md" style="background-color: #FBE0DB">
+        <section class="text-center side-image">
+            <img src="assets/images/asset.png" height="100%" alt="" />
+        </section>
+        <section class="login-form text-center">
+            <h1 style="margin-bottom: 10px" class="text-primary margin-top-md font-xl">
+                Welcome!
+            </h1>
+            <p>Masukan detail anda</p>
+            <div class="form-group">
+                <label for="">Username / email</label>
+                <input type="text" />
+                <label for="">Password</label>
+                <input type="password" />
+                <a href="index2.html" class="button-primary" style="margin-top: 2vh; width: 100%; text-align: center;">
+                    Sign in
+                </a>
+                <div class="text-center" style="margin-top: 2vh; width: 100%;">
 
+                    <p>Belum Punya Akun?</p>
+                    <a href="signup.html" style="font-weight: 600; color: black;">Sign Up</a>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+```
 ### Sign Up
 #### Tag Head
 #### Tag Body
