@@ -385,6 +385,12 @@ Tag head, header, dan footer pada file ini masih menggunakan source code yang sa
 ```
 Bagian ini merupakan konten utama yang terdapat pada halaman upload. Berbentuk formulir yang menjadi media untuk melakukan unggahan baru pada linimasa dengan beberapa pertanyaan yang memiliki jenis inputan yang berbeda-beda serta satu button untuk menyelesaikan proses upload.
 
+### Setting
+#### Tag head
+Sourcode yang digunakan pada tag head dalam file ini masih sama dengan index.html, yang menjadi pembeda adalah pada title yang diubah menjadi "Setting-Alokasa".
+#### Tag body
+##### header 
+##### main
 ### CSS
 
 
