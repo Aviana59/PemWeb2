@@ -245,6 +245,75 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
         </section>
     </main>
 ```
+
+- Kode HTML ini untuk membuat keterangan contact yang ada pada navbar. Berisi info kontak dari email, instagram, twitter dan mengatur style di style.css
+```
+<footer>
+        <address>
+            <div id="contact" class="text-center">
+                <span><i class="email-symbol">&#x2709</i> alokasa@gmail.com</span><br>
+                <div class="instagram-symbol">
+                    <img src="https://cdn.icon-icons.com/icons2/2714/PNG/96/instagram_logo_thin_icon_171701.png"
+                        alt="logo instagram">
+                    <span>alokasa_official</span>
+                </div><br>
+                <div class="twitter-symbol">
+                    <img src="https://cdn.icon-icons.com/icons2/1143/PNG/96/twitterlogooutline_80724.png"
+                        alt="logo twitter">
+                    <span>alokasaofficial</span>
+                </div>
+            </div>
+        </address>
+    </footer>
+```
+
+#### Java Script
+- Kode JS ini untuk memberikan efek transisi header text
+```
+<script>
+    // Animate Header text when open / reload browser
+    window.onload = function () {
+        document.getElementById('header-text').style.opacity = 1;
+        document.getElementById('header-text').style.transform = "translateX(0px)";
+    }
+```
+
+- Kode JS ini untuk menangani navbar ketika user melakukan scroll web
+```
+/* !TODO : Action to handle Navbar when user is scrolling */
+
+    // kode untuk mendapat tinggi scrolling saat ini
+    let currentHeight = window.pageYOffset;
+
+    // fungsi ketika user scroll web
+    window.onscroll = () => {
+
+        // kode untuk mendapatkan tinggi sebelumnya
+        let prevHeight = window.pageYOffset;
+
+        if (currentHeight > 350) {
+            // handling navbar when scroll up by adding a class
+            document.getElementById('navbar').classList.add('bg-primary')
+            document.getElementById('navbar').classList.remove('bg-transparent')
+            document.getElementById('logo').classList.add('text-seccondary')
+            document.getElementById('logo').classList.remove('text-primary')
+            document.getElementById('hamburger').classList.add('text-seccondary')
+            document.getElementById('hamburger').classList.remove('text-primary')
+
+        } else if (currentHeight < 350) {
+            // handling navbar when scroll down by adding a class
+            document.getElementById('logo').classList.remove('text-seccondary')
+            document.getElementById('logo').classList.add('text-primary')
+            document.getElementById('hamburger').classList.remove('text-seccondary')
+            document.getElementById('hamburger').classList.add('text-primary')
+            document.getElementById('navbar').classList.remove('bg-primary')
+            document.getElementById('navbar').classList.add('bg-transparent')
+        }
+
+        // Mengisi tinggi saat ini dengan tinggi sebelumnya
+        currentHeight = prevHeight;
+```
+
 ### Index2
 ### Login
 ### Upload
