@@ -45,7 +45,7 @@ header {
   border-radius: 0px 0px 40px 40px;
   width: 100%;
   background-image: linear-gradient(#f7c59f, #e1e5ee);
-  min-height: 50vh;
+  min-height: 20vh;
 }
 
 a {
@@ -301,14 +301,14 @@ input[type="checkbox"] {
 
 .instagram-symbol {
   width: fit-content;
-  height: 5px;
+  height: 25px;
   margin: auto;
   display: flex;
 }
 
 .twitter-symbol {
   width: fit-content;
-  height: 5px;
+  height: 25px;
   margin: auto;
   display: flex;
 }
