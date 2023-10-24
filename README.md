@@ -239,7 +239,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 
 </html>
 
-<script>
+
     // Animate Header text when open / reload browser
     window.onload = function () {
         document.getElementById('header-text').style.opacity = 1;
@@ -278,7 +278,7 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
         // assign currentHeight with previous height
         currentHeight = prevHeight;
     }
-</script>
+
 
 #### Tag Head
 Kode HTML ini memuat file CSS `style.css` dan memuat font dari Google Fonts. Font yang dimuat adalah font Merriweather dan Poppins.
