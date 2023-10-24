@@ -17,19 +17,19 @@
     <header class="text-center" style="top: 0; position: absolute;">
         <nav class="navbar bg-transparent" id="navbar">
             <div class="logo text-primary text-bold" id="logo">Alokasa</div>
-        
+
             <!-- NAVIGATION MENU -->
             <ul class="nav-links">
-              <!-- USING CHECKBOX HACK -->
-              <input type="checkbox" id="checkbox_toggle" />
-              <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
-        
-              <!-- NAVIGATION MENUS -->
-              <div class="menu">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>        
-                <li><a href="#contact">Contact</a></li>
-              </div>
+                <!-- USING CHECKBOX HACK -->
+                <input type="checkbox" id="checkbox_toggle" />
+                <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
+
+                <!-- NAVIGATION MENUS -->
+                <div class="menu">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </div>
             </ul>
             <a href="login.html"><button class="button-primary btn-signin">sign in</button></a>
         </nav>
@@ -163,3 +163,15 @@
 </body>
 
 </html>
+
+<script>
+    // Animate Header text when open / reload browser
+    window.onload = function () {
+        document.getElementById('header-text').style.opacity = 1;
+        document.getElementById('header-text').style.transform = "translateX(0px)";
+    }
+
+    /* !TODO : Action to handle Navbar when user is scrolling */
+
+    // get current height
+    let currentHeight = window.pageYOffset;
