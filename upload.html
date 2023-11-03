@@ -28,25 +28,30 @@
                 <div class="menu">
                     <li><a href="index2.html">Home</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <li><a href="">Setting</a></li>
+                    <li><a href="setting.html">Setting</a></li>
                 </div>
             </ul>
         </nav>
         <div class="content text-primary" style="margin-top: 20vh; padding: 50px;">
-            <h2 style="font-size: 2em;">Abadikan moment Anda di sini</h2>
+            <h2 style="font-size: 2em;">Abadikan moment Anda bersama Alokasa</h2>
         </div>
     </header>
     <main style="margin-top: 50vh;">
-        <form>
-            <p>Masukkan foto/video yang ingin anda upload :</p>
-            <input type="file" name="foto/video" accept="image/*" accept="video/*">
-            <p>Masukkan tanggal :</p>
-            <input type="date" name="tanggal">
-            <p>Tambahkan judul :</p>
-            <input type="text" name="judul">
-            <p>Ceritakan momen anda disini :</p>
-            <input type="text" name="deskripsi">
-            <p>Dimana anda akan menambahkan momen ini?</p>
+
+         <div class="form-upload">
+            <p>Pilih Foto/Video Anda</p>
+            <label class="custom-file-upload">
+                <input type="file" id="files" name="files[]" onchange="checkFileExtension(this)"/>
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
+                <span>Choose a file</span>
+            </label>
+            <p>Masukkan tanggal</p>
+            <input type="date"/>
+            <p>Tambahkan judul</p>
+            <input type="text">
+            <p>Deskripsikan moment Anda</p>
+            <input type="text">
+            <p>Kategori moment</p>
             <select name="kategori">
                 <option value="1">Pendidikan</option>
                 <option value="2">Pekerjaan</option>
@@ -54,19 +59,16 @@
                 <option value="4">Teman</option>
                 <option value="5">Hiburan</option>
             </select>
-            <p>Sesuaikan tampilan </p>
-            <select>
-                <option value="x">Default</option>
-                <option value="template1.png">
-                    <img src="assets/images/template1.png" alt="modernTech">
-                </option>
-                <option value="template2.png">
-                    <img src="assets/images/template2.png" alt="Simple">
-                </option>
-            </select>
-        </form>
+            <p>Sesuaikan tampilan (Pilih template)</p>
+            <div style="display: flex; flex-wrap:wrap">
+                <img src="xxx" alt="Default">
+                <img src="assets/images/template1.png" alt="template1" style="margin: 10px;" width="300px" height="200px">
+                <img src="assets/images/template2.png" alt="template2" style="margin: 10px;" width="300px" height="200px">
+            </div>
+         </div>   
+        
         <a href="index2.html"><button class="button-primary"
-                style="align-item: right; padding: 15px; margin: 20px;">Upload</button></a>
+                style=" align-items: right; padding: 15px; margin: 20px;">Upload</button></a>
     </main>
 
     <footer style="margin-top: 5vh;">
@@ -97,7 +99,7 @@
         // get previous height
         let prevHeight = window.pageYOffset;
 
-        if (currentHeight > 320) {
+        if (currentHeight > 300) {
             // handling navbar when scroll up by adding a class
             document.getElementById('navbar').classList.add('bg-primary')
             document.getElementById('navbar').classList.remove('bg-transparent')
@@ -106,7 +108,7 @@
             document.getElementById('hamburger').classList.add('text-seccondary')
             document.getElementById('hamburger').classList.remove('text-primary')
 
-        } else if (currentHeight < 320) {
+        } else if (currentHeight < 300) {
             // handling navbar when scroll down by adding a class
             document.getElementById('logo').classList.remove('text-seccondary')
             document.getElementById('logo').classList.add('text-primary')
