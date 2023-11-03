@@ -418,7 +418,7 @@ label {
   margin: 25px;
  }
 
- .form-upload > p {
+ .form-upload >p {
   font-weight: bold;
   font-family: "Merriweather";
   font-size: 16px;
@@ -426,13 +426,14 @@ label {
   margin-top: 20px;
  }
 
- .form-upload > input {
+ .form-upload >input {
   padding: 10px;
  }
  
- .form-upload > input[type="text"] {
+ .form-upload >input[type="text"] {
   border: 1px solid black;
  }
+
 .custom-file-upload {
   position: relative;
   display: inline-block;
