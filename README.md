@@ -60,10 +60,11 @@ File yang terupload : file yang telah diedit akan disimpan sementara sebelum kon
 Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat oleh publik.
 
 ## Activity Diagram
-![usecase](assets/images/activity_diagram.png)
+![activity_diagram](assets/images/activity_diagram.png)
 
 ## Tampilan Web
 - Index
+  ![indexnavbar](assets/images/Index.PNG)
 - Index2
 - Sign In
 - Sign Up
