@@ -67,17 +67,22 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
   ![indexnavbar](assets/images/Index.PNG)
   ![Linimasa](assets/images/Linimasa.PNG)
   ![Review](assets/images/Review.PNG)
+  
 - Index2
   ![index2navbar](assets/images/Index2.PNG)
   ![Linimasa](assets/images/Linimasa.PNG)
   ![Review](assets/images/Review.PNG)
+  
 - Sign In
   ![Singin](assets/images/Signin.PNG)
+  
 - Sign Up
   ![Singup](assets/images/Signup.PNG)
+  
 - Upload
   ![Upload](assets/images/Upload.PNG)
   ![Upload](assets/images/Upload2.PNG)
+  
 - Setting
   ![Setting](assets/images/Setting.PNG)
 
@@ -562,7 +567,7 @@ html {
   scroll-behavior: smooth;
 }
 ```
-- Untuk mengatur fon pada body
+- Untuk mengatur font pada body
 ```
 body {
   font-family: "Merriweather", sans-serif;
