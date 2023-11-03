@@ -62,6 +62,14 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 ## Activity Diagram
 ![usecase](assets/images/activity_diagram.png)
 
+## Tampilan Web
+- Index
+- Index2
+- Sign In
+- Sign Up
+- Upload
+- Setting
+
 ## Penjelasan Program
 ### Index
 #### Tag Head
