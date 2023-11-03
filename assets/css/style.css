@@ -435,3 +435,32 @@ form input[type="submit"] {
   color: #fff;
   cursor: pointer;
 }
+
+
+.header-setting {
+  color: white;
+  margin: 0;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  column-gap: 15px;
+}
+
+.user {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  margin: 25px;
+  column-gap: 50px;
+}
+
+.content-setting {
+  margin: 25px;
+}
+.content-setting > .sub-setting > h4 {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 50px;
+  margin-bottom: 25px;
+}
