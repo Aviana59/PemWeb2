@@ -65,6 +65,8 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
 ## Tampilan Web
 - Index
   ![indexnavbar](assets/images/Index.PNG)
+  ![Linimasa](assets/images/Linimasa.PNG)
+  ![Review](assets/images/Review.PNG)
 - Index2
 - Sign In
 - Sign Up
