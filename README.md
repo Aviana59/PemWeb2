@@ -1,10 +1,10 @@
 # WEBSITE ALOKASA
 
-## Tujuan
-Dokumen ini merupakan Spesifikasi Kebutuhan Perangkat Lunak (SKPL) atau Software Requirement Specification (SRS) untuk Website Alokasa. Tujuan dari penulisan dokumen ini adalah untuk memberikan penjelasan mengenai website yang akan dibangun baik berupa gambaran umum maupun penjelasan detail dan menyeluruh. Pengguna dari dokumen ini adalah para pengembang (developer) perangkat lunak aplikasi pengumpulan tugas dan pengguna (user) dari perangkat lunak ini atau mereka yang terlibat dalam sistem. Dokumen ini akan digunakan sebagai bahan acuan dalam proses pengembangan dan sebagai bahan evaluasi pada saat proses pengembangan perangkat lunak maupun di akhir pengembangannya. Dengan adanya dokumen SKPL ini diharapkan pengembangan perangkat lunak akan lebih terarah dan lebih terfokus serta tidak menimbulkan ambiguitas terutama bagi pengembang perangkat lunak ini.
-
 ## Perspektif Produk
 Website Alokasa merupakan website untuk membuat linimasa baik pribadi atau organisasi. Nama Alokasa sendiri diambil dari kata “aloka” dari bahasa sansekerta yang berarti cahaya dan “samsara” yang biasa disebut dalam beberapa agama seperti Hindu dan Budha untuk menggambarkan siklus hidup. Sehingga nama Alokasa sendiri bisa diartikan siklus hidup yang penuh cahaya yang dianggap relevan dengan website yang kami rancang untuk memberi ruang kepada semua orang agar bisa membuat jejak digital berupa linimasa di dalam website yang bisa terus diupdate dan dibuka kembali. Privasi pengguna website ini terjaga dengan artian linimasa pengguna tidak akan ditampilkan kepada pengguna lain, tapi pengguna tetap bisa membagikan linimasanya kepada orang-orang tertentu saja melalui link yang di generate dari situs web ini. Situs web ini dirancang sebagai sistem yang mandiri, bukan anggota lanjutan dari aplikasi atau situs website lainnya. 
+
+## Tujuan
+Dokumen ini merupakan Spesifikasi Kebutuhan Perangkat Lunak (SKPL) atau Software Requirement Specification (SRS) untuk Website Alokasa. Tujuan dari penulisan dokumen ini ada.lah untuk memberikan penjelasan mengenai website yang akan dibangun baik berupa gambaran umum maupun penjelasan detail dan menyeluruh. Pengguna dari dokumen ini adalah para pengembang (developer) perangkat lunak aplikasi pengumpulan tugas dan pengguna (user) dari perangkat lunak ini atau mereka yang terlibat dalam sistem. Dokumen ini akan digunakan sebagai bahan acuan dalam proses pengembangan dan sebagai bahan evaluasi pada saat proses pengembangan perangkat lunak maupun di akhir pengembangannya. Dengan adanya dokumen SKPL ini diharapkan pengembangan perangkat lunak akan lebih terarah dan lebih terfokus serta tidak menimbulkan ambiguitas terutama bagi pengembang perangkat lunak ini.
 
 ## Fungsi Produk
 A. Sistem 
@@ -15,7 +15,8 @@ A. Sistem
    3. Tambah Deskripsi singkat
       Alokasa memiliki fitur deskripsi singkat untuk memberikan keterangan terhadap foto yang akan diupload sebagai penanda ataupun pengingat momen yang diabadikan dan disimpan arsip di alokasa.
    4. Kategori foto
-
+      Fitur kategori foto ini untuk mengkategorikan foto-foto yang pengguna upload di Alokasa sehingga teroganisir sesuai dengan kategori yang diberikan.
+      
 B. Pengguna
    1. Fungsi Upload Foto
       Pengguna dapat mengupload foto yang akan dijadikan arsip sebagai kenangan kenangan.
@@ -67,11 +68,24 @@ Publikasi ke internet : pengguna dapat memilih untuk membuat foto/album terlihat
   ![indexnavbar](assets/images/Index.PNG)
   ![Linimasa](assets/images/Linimasa.PNG)
   ![Review](assets/images/Review.PNG)
+  
 - Index2
+  ![index2navbar](assets/images/Index2.PNG)
+  ![Linimasa](assets/images/Linimasa.PNG)
+  ![Review](assets/images/Review.PNG)
+  
 - Sign In
+  ![Singin](assets/images/Signin.PNG)
+  
 - Sign Up
+  ![Singup](assets/images/Signup.PNG)
+  
 - Upload
+  ![Upload](assets/images/Upload.PNG)
+  ![Upload](assets/images/Upload2.PNG)
+  
 - Setting
+  ![Setting](assets/images/Setting.PNG)
 
 ## Penjelasan Program
 ### Index
@@ -554,7 +568,7 @@ html {
   scroll-behavior: smooth;
 }
 ```
-- Untuk mengatur fon pada body
+- Untuk mengatur font pada body
 ```
 body {
   font-family: "Merriweather", sans-serif;
