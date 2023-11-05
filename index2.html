@@ -22,7 +22,7 @@
             <ul class="nav-links">
                 <!-- USING CHECKBOX HACK -->
                 <input type="checkbox" id="checkbox_toggle" />
-                <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+                <label for="checkbox_toggle" id="hamburger" class="hamburger">&#9776;</label>
 
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
@@ -175,7 +175,7 @@
 </html>
 
 <script>
-     window.onload = function () {
+    window.onload = function () {
         document.getElementById('header-text').style.opacity = 1;
         document.getElementById('header-text').style.transform = "translateX(0px)";
     }

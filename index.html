@@ -31,7 +31,7 @@
                     <li><a href="#contact">Contact</a></li>
                 </div>
             </ul>
-            <a href="signin.html" class="button-primary btn-signin">Sign In</a>
+            <a href="signin.html" class="button-primary btn-signin" id="sign-in">Sign In</a>
         </nav>
         <div class="content text-primary" id="header-text" style="margin-top: 20vh; padding: 50px;">
             <h2 style="font-size: 3em;">Simpan kenangan indah anda</h2>
@@ -197,6 +197,8 @@
             document.getElementById('logo').classList.remove('text-primary')
             document.getElementById('hamburger').classList.add('text-seccondary')
             document.getElementById('hamburger').classList.remove('text-primary')
+            document.getElementById('sign-in').classList.add('button-seccondary')
+            document.getElementById('sign-in').classList.remove('button-primary')
 
         } else if (currentHeight < 350) {
             // handling navbar when scroll down by adding a class
@@ -206,6 +208,8 @@
             document.getElementById('hamburger').classList.add('text-primary')
             document.getElementById('navbar').classList.remove('bg-primary')
             document.getElementById('navbar').classList.add('bg-transparent')
+            document.getElementById('sign-in').classList.remove('button-seccondary')
+            document.getElementById('sign-in').classList.add('button-primary')
         }
 
         // assign currentHeight with previous height
