@@ -709,7 +709,7 @@ Tag head, header, dan footer pada file ini masih menggunakan source code yang sa
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <title>Upload-Alokasa</title>
+    <title>Upload-Alokasa</title> // Judul halaman
 </head>
 ```
 ```
@@ -793,7 +793,7 @@ Bagian ini merupakan konten utama yang terdapat pada halaman upload. Berbentuk f
 
 ### Setting
 #### Tag head
-Sourcode yang digunakan pada tag head dalam file ini masih sama dengan index.html, yang menjadi pembeda adalah pada title yang diubah menjadi "Setting-Alokasa".
+Source code yang digunakan pada tag head dalam file ini masih sama dengan index.html, yang menjadi pembeda adalah pada title yang diubah menjadi "Setting-Alokasa".
 ```
 <head>
     <meta charset="UTF-8">
@@ -804,7 +804,7 @@ Sourcode yang digunakan pada tag head dalam file ini masih sama dengan index.htm
     <link
         href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap"
         rel="stylesheet">
-    <title>Setting-Alokasa</title>
+    <title>Setting-Alokasa</title> // Judul halaman
 </head>
 ```
 #### Tag body
