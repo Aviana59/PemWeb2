@@ -756,6 +756,7 @@ Tag head, header, dan footer pada file ini masih menggunakan source code yang sa
 </body>
 ```
 #### Tag main
+- Bagian ini merupakan konten utama yang terdapat pada halaman upload. Berbentuk formulir yang menjadi media untuk melakukan unggahan baru pada linimasa dengan beberapa pertanyaan yang memiliki jenis inputan yang berbeda-beda serta satu button untuk menyelesaikan proses upload.
 ```
 <main style="margin-top: 50vh;">    
        <form>
@@ -789,11 +790,10 @@ Tag head, header, dan footer pada file ini masih menggunakan source code yang sa
             <a href="index2.html"><button class="button-primary" style="align-item: right; padding: 15px; margin: 20px;">Upload</button></a>
    </main>
 ```
-Bagian ini merupakan konten utama yang terdapat pada halaman upload. Berbentuk formulir yang menjadi media untuk melakukan unggahan baru pada linimasa dengan beberapa pertanyaan yang memiliki jenis inputan yang berbeda-beda serta satu button untuk menyelesaikan proses upload.
 
 ### Setting
 #### Tag head
-Source code yang digunakan pada tag head dalam file ini masih sama dengan index.html, yang menjadi pembeda adalah pada title yang diubah menjadi "Setting-Alokasa".
+- Source code yang digunakan pada tag head dalam file ini masih sama dengan index.html, yang menjadi pembeda adalah pada title yang diubah menjadi "Setting-Alokasa".
 ```
 <head>
     <meta charset="UTF-8">
@@ -809,14 +809,15 @@ Source code yang digunakan pada tag head dalam file ini masih sama dengan index.
 ```
 #### Tag body
 ##### header 
+- Header pada halaman ini hanya berisi tanda panah kiri yang merujuk kembali ke halaman home (index2.html) dan tulisan Setting.
 ```
 <div class="bg-primary header-setting">
         <a href="index2.html"><p style="font-size: 30px; color:white;">&#x2190</p></a>
         <p>Setting</p>
     </div>
 ```
-Header pada halaman ini hanya berisi tanda panah kiri yang merujuk kembali ke halaman home (index2.html) dan tulisan Setting.
 ##### main
+- Konten utama pada halaman ini terbagi menjadi tiga yaitu user. content-setting, dan log out. Class user berisi foto profil pengguna beserta usernamenya. Sedangkan class content-setting berisi apa saja yang bisa diatur oleh user pada website ini, yaitu Akun, Privasi, dan Bahasa. Halaman ini juga dilengkapi dengan tampilan button log out pada bagian paling bawah.
 ```
 <main>
         <div class="user">
@@ -846,7 +847,6 @@ Header pada halaman ini hanya berisi tanda panah kiri yang merujuk kembali ke ha
         </div>
     </main>
 ```
-Konten utama pada halaman ini terbagi menjadi tiga yaitu user. content-setting, dan log out. Class user berisi foto profil pengguna beserta usernamenya. Sedangkan class content-setting berisi apa saja yang bisa diatur oleh user pada website ini, yaitu Akun, Privasi, dan Bahasa. Halaman ini juga dilengkapi dengan tampilan button log out pada bagian paling bawah.
 
 ### CSS
 - Kode CSS ini untuk mengimport font dari google
