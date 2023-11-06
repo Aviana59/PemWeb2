@@ -794,6 +794,19 @@ Bagian ini merupakan konten utama yang terdapat pada halaman upload. Berbentuk f
 ### Setting
 #### Tag head
 Sourcode yang digunakan pada tag head dalam file ini masih sama dengan index.html, yang menjadi pembeda adalah pada title yang diubah menjadi "Setting-Alokasa".
+```
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,400;0,700;1,300&family=Poppins:wght@400;600;700&display=swap"
+        rel="stylesheet">
+    <title>Setting-Alokasa</title>
+</head>
+```
 #### Tag body
 ##### header 
 ```
