@@ -51,20 +51,6 @@
             <input type="text">
             <p>Deskripsikan moment Anda</p>
             <input type="text">
-            <p>Kategori moment</p>
-            <select name="kategori">
-                <option value="1">Pendidikan</option>
-                <option value="2">Pekerjaan</option>
-                <option value="3">Keluarga</option>
-                <option value="4">Teman</option>
-                <option value="5">Hiburan</option>
-            </select>
-            <p>Sesuaikan tampilan (Pilih template)</p>
-            <div style="display: flex; flex-wrap:wrap">
-                <img src="xxx" alt="Default">
-                <img src="assets/images/template1.png" alt="template1" style="margin: 10px;" width="300px" height="200px">
-                <img src="assets/images/template2.png" alt="template2" style="margin: 10px;" width="300px" height="200px">
-            </div>
          </div>   
         
         <a href="index2.html"><button class="button-primary"
