@@ -3,7 +3,7 @@
 	 $host = "localhost";
 	 $uname = "root"; // username database mu
 	 $pass = ""; // password database mu klo ada
-	 $db = "cobaalokasa"; //sesuaiin sm tabel mu
+	 $db = "alokasa"; //sesuaiin sm tabel mu
 	
 	 $koneksi = mysqli_connect($host, $uname, $pass, $db);
 	 if($koneksi){
