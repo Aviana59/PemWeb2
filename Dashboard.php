@@ -1,8 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+// INCLUDE KONEKSI KE DATABASE
+include_once("koneksi.php");
+
+// AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
+$result = mysqli_query($mysqli, "SELECT * FROM linimasa ORDER BY id DESC");
+?>
+
+<html>
 
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -14,7 +21,7 @@
 </head>
 
 <body>
-    <header class="text-center" style="top: 0; position: absolute;">
+	<header class="text-center" style="top: 0; position: absolute;">
         <nav class="navbar bg-transparent" id="navbar">
             <div class="logo text-primary text-bold" id="logo">Alokasa</div>
 
@@ -38,105 +45,51 @@
             <h3>Dimana setiap pengalaman adalah bagian dari perjalanan</h3>
         </div>
     </header>
-    <main style="padding: 20px;  margin-top: 50vh;">
 
+    <main>
         <section style="padding: 20px; margin-top: 10vh; position: relative;" id="linimasa">
             <div class="flex" style="justify-content: space-between;">
                 <h1 style="font-size: 2em;">Linimasa</h1>
                 <a href="upload.php" class="button button-seccondary center">Tambah linimasa &plus;</a>
             </div>
             <div class="flex linimasa-data" style="justify-content: space-evenly;">
-                <div class="card">
-                    <img src="assets/images/kelasBDL.jpeg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Kelas basis data lanjutan</b></h4>
-                        <small>Senin, 11 September 2023</small>
-                        <div class="action" style="margin-top: 2vh;">
-                            <button class="button-action">lihat &rarr;</button>
-                            <button class="button-action">download &darr;</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/kelasBDL.jpeg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Kelas basis data lanjutan</b></h4>
-                        <small>Senin, 11 September 2023</small>
-                        <div class="action" style="margin-top: 2vh;">
-                            <button class="button-action">lihat &rarr;</button>
-                            <button class="button-action">download &darr;</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/kelasBDL.jpeg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Kelas basis data lanjutan</b></h4>
-                        <small>Senin, 11 September 2023</small>
-                        <div class="action" style="margin-top: 2vh;">
-                            <button class="button-action">lihat &rarr;</button>
-                            <button class="button-action">download &darr;</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="card">
-                    <img src="assets/images/kelasBDL.jpeg" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b>Kelas basis data lanjutan</b></h4>
-                        <small>Senin, 11 September 2023</small>
-                        <div class="action" style="margin-top: 2vh;">
-                            <button class="button-action">lihat &rarr;</button>
-                            <button class="button-action">download &darr;</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="review" style="padding: 20px; margin-top: 10vh;">
-            <h1 style="font-size: 2em;">Review</h1>
-            <div class="flex review-data" style="justify-content: space-evenly; margin-top: 5vh;">
-                <div class="card-review flex" style="align-items: center;">
-                    <div class="icon">
-                        <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
-                    </div>
-                    <div class="comments">
-                        <strong>User</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card-review flex" style="align-items: center;">
-                    <div class="icon">
-                        <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
-                    </div>
-                    <div class="comments">
-                        <strong>User</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
+            <?php
+            while ($res = mysqli_fetch_array($result)) {
+                ?>
+                <div class="card">
+                    <img src="assets/file/<?php echo $res['gambar']; ?>" alt="Avatar" style="width:100%">
+                    <div class="container">
+                        <h4><b><?php echo $res['judul']; ?></b></h4>
+                        <small><?php echo $res['tanggal']; ?></small>
+                        <p><?php echo $res['deskripsi'];?></p>
+                        <div class="action" style="margin-top: 2vh;">
+                            <a href="linimasa_edit.php?id=<?php echo $res['id']; ?>" class="button-action">Edit &rarr;</a>
+                            <form action="linimasa_controller.php" method="POST">
+                                <button type="submit" name="delete_linimasa" value="<?= $row['id'] ?>" class="button-action">Delete</button>
+                            </form>
+                            <a href="assets/file/<?php echo $res['id']; ?>" Download class="button-action">Download &darr;</a>
+                        </div>
                     </div>
                 </div>
-                <div class="card-review flex" style="align-items: center;">
-                    <div class="icon">
-                        <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
-                    </div>
-                    <div class="comments">
-                        <strong>User</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card-review flex" style="align-items: center;">
-                    <div class="icon">
-                        <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
-                    </div>
-                    <div class="comments">
-                        <strong>User</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </div>
+                <?php
+            }
+            ?>
+
+            </div>
+        </section style="padding: 20px; margin-top: 10vh; position: relative;" id="review">
+
+        <section>
+            <div class="flex" style="justify-content: space-between;">
+                <h1 style="font-size: 2em;">Review</h1>
+            </div>
+            <div>
+                
             </div>
         </section>
     </main>
-
-    <footer>
+    
+	<footer>
         <address>
             <div id="contact" class="text-center">
                 <span><i class="email-symbol">&#x2709</i> alokasa@gmail.com</span><br>

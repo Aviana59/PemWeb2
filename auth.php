@@ -44,4 +44,12 @@ class Auth {
         session_destroy();
         return true;
     }
+
+    public function getUsername() {
+        if(isset($_SESSION["user"]) && $_SESSION["is_signin"]) {
+            return $_SESSION["user"];
+        } else {
+            return null; // Jika tidak ada user yang terotentikasi
+        }
+    }
 }

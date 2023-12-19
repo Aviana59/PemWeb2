@@ -9,7 +9,7 @@ $db = new DatabaseConnection;
 
 $linimasa = new LinimasaController($db->conn);
 
-if (isset($_POST['save_linimasa'])) 
+if (isset($_POST['kirim'])) 
 {
     $inputData = [
         'foto' => mysqli_real_escape_string($db->conn, $_FILES["image"]["name"]),
@@ -23,6 +23,10 @@ if (isset($_POST['save_linimasa']))
     if ($result) {
         $_SESSION['message'] = "Data Added Successfully";
         header("Location: upload.php");
+        // FOLDER DIMANA GAMBAR AKAN DI SIMPAN
+			$folder = 'assets/file/';
+			// GAMBAR DI SIMPAN KE DALAM FOLDER
+			move_uploaded_file($filetmpname, $folder . $filename);
         exit(0);
     } else {
         $_SESSION['message'] = "Not Inserted";

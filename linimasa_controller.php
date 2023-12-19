@@ -77,7 +77,7 @@ class LinimasaController
 {
     // Implementasi operasi UPDATE untuk tabel "linimasa"
     $linimasa_id = mysqli_real_escape_string($this->conn, $id);
-    $foto = $inputData['foto'];
+    $foto = $inputData['file'];
     $tanggal = $inputData['tanggal'];
     $judul = $inputData['judul'];
     $deskripsi = $inputData['deskripsi'];
