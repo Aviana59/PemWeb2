@@ -11,10 +11,11 @@ session_start()
         endif;
     ?>
 <?php
-    if(isset($_SESSION['is_signin']) && $_SESSION['is_signin']) {
+    // MEMERIKSA KONDISI APAKAH SUDAH LOGIN
+    if($_SESSION && $_SESSION['is_signin']):
+        // DIRECT HALAMAN KE DASHBOARD JIKA SUDAH LOGIN
         header("Location: Dashboard.php");
         exit(); // Pastikan untuk menghentikan eksekusi skrip setelah mengarahkan pengguna
-    }
     ?>
     
 <!DOCTYPE html>
@@ -132,26 +133,34 @@ session_start()
         <section style="padding: 20px; margin-top: 10vh;">
             <h1 style="font-size: 2em;">Review</h1>
             <div class="flex review-data" style="justify-content: space-evenly; margin-top: 5vh;">
-                
+
                 <?php
-                while ($res = mysqli_fetch_array($result)) 
-                {
-                    ?>
-                    <div class="card-review flex" style="align-items: center;">
-                        <div class="icon">
-                            <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
+                // Check if $result is set and not null
+                if (isset($result) && $result) {
+                    // Fetch rows as long as there are results
+                    while ($res = mysqli_fetch_array($result)) {
+                        ?>
+                        <div class="card-review flex" style="align-items: center;">
+                            <div class="icon">
+                                <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
+                            </div>
+                            <div class="comments">
+                                <strong><?php echo $res['username']; ?></strong>
+                                <p><?php echo $res['review']; ?></p>
+                            </div>
                         </div>
-                        <div class="comments">
-                            <strong><?php echo $res['username']; ?></strong>
-                            <p><?php echo $res['review'];?></p>
-                        </div>
-                    </div>
-                    <?php
+                        <?php
+                    }
+                } else {
+                    // Display message if there are no reviews
+                    echo "<p>Belum ada ulasan</p>";
                 }
                 ?>
 
             </div>
         </section>
+
+
     </main>
 
     <footer>
