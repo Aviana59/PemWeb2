@@ -16,6 +16,7 @@ session_start()
         // DIRECT HALAMAN KE DASHBOARD JIKA SUDAH LOGIN
         header("Location: Dashboard.php");
         exit(); // Pastikan untuk menghentikan eksekusi skrip setelah mengarahkan pengguna
+    endif;
     ?>
     
 <!DOCTYPE html>
