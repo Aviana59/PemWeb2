@@ -11,13 +11,11 @@ session_start()
         endif;
     ?>
 <?php
-    // DIRECT KE HALAMAN DAHSBOARD JIKA SUDAH LOGIN
     if(isset($_SESSION['is_signin']) && $_SESSION['is_signin']) {
-    header("Location: Dashboard.php");
-    exit(); // Pastikan untuk menghentikan eksekusi skrip setelah mengarahkan pengguna
-}
+        header("Location: Dashboard.php");
+        exit(); // Pastikan untuk menghentikan eksekusi skrip setelah mengarahkan pengguna
+    }
     ?>
-    
     
 <!DOCTYPE html>
 <html lang="en">
