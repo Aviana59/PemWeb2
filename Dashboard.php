@@ -59,7 +59,7 @@ $result = mysqli_query($koneksi, "SELECT * FROM linimasa ORDER BY id DESC");
                 {
                     ?>
                     <div class="card">
-                        <img src="assets/file/<?php echo $res['gambar']; ?>" alt="Avatar" style="width:100%">
+                        <img src="assets/file/<?php echo $res['file']; ?>" alt="Avatar" style="width:100%">
                         <div class="container">
                             <h4><b><?php echo $res['judul']; ?></b></h4>
                             <small><?php echo $res['tanggal']; ?></small>
@@ -67,7 +67,7 @@ $result = mysqli_query($koneksi, "SELECT * FROM linimasa ORDER BY id DESC");
                             <div class="action" style="margin-top: 2vh;">
                                 <a href="linimasa_edit.php?id=<?php echo $res['id']; ?>" class="button-action">Edit &rarr;</a>
                                 <form action="linimasa_controller.php" method="POST">
-                                    <button type="submit" name="delete_linimasa" value="<?= $row['id'] ?>" class="button-action">Delete</button>
+                                    <button type="submit" name="delete_linimasa" value="<?= $res['id'] ?>" class="button-action">Delete</button>
                                 </form>
                                 <a href="assets/file/<?php echo $res['id']; ?>" Download class="button-action">Download &darr;</a>
                             </div>
