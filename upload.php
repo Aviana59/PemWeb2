@@ -56,7 +56,7 @@
         </div>
     </header>
     <main style="margin-top: 50vh;">
-<form method="post" >
+<form method="post" enctype="multipart/form-data" action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>">
          <div class="form-upload">
             <p>Pilih Foto Anda</p>
             <label class="custom-file-upload">

@@ -52,14 +52,14 @@ $result = mysqli_query($koneksi, "SELECT * FROM linimasa ORDER BY id DESC");
                 <h1 style="font-size: 2em;">Linimasa</h1>
                 <a href="upload.php" class="button button-seccondary center">Tambah linimasa &plus;</a>
             </div>
-            <div class="flex linimasa-data" style="justify-content: space-evenly;">
+            <div class="flex linimasa-data" style="flex-warp:warp; justify-content: space-evenly;">
 
             <?php
                 while ($res = mysqli_fetch_array($result)) 
                 {
                     ?>
-                    <div class="card">
-                        <img src="assets/file/<?php echo $res['file']; ?>" alt="Avatar" style="width:100%">
+                    <div class="card" style="width:25%">
+                        <img src="image/<?php echo $res['file']; ?>" alt="Avatar" style="width:100%">
                         <div class="container">
                             <h4><b><?php echo $res['judul']; ?></b></h4>
                             <small><?php echo $res['tanggal']; ?></small>
