@@ -1,13 +1,24 @@
 <?php
 session_start()
-
-// INCLUDE KONEKSI KE DATABASE
-include_once("koneksi.php");
-
-// AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
-$result = mysqli_query($mysqli, "SELECT * FROM review ORDER BY id DESC");
 ?>
+<?php
+    if(!$_SESSION):
+        // INCLUDE KONEKSI KE DATABASE
+        include_once("koneksi.php");
 
+        // AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
+        $result = mysqli_query($koneksi, "SELECT * FROM review ORDER BY id DESC");
+        endif;
+    ?>
+<?php
+    // DIRECT KE HALAMAN DAHSBOARD JIKA SUDAH LOGIN
+    if(isset($_SESSION['is_signin']) && $_SESSION['is_signin']) {
+    header("Location: Dashboard.php");
+    exit(); // Pastikan untuk menghentikan eksekusi skrip setelah mengarahkan pengguna
+}
+    ?>
+    
+    
 <!DOCTYPE html>
 <html lang="en">
 
@@ -39,22 +50,10 @@ $result = mysqli_query($mysqli, "SELECT * FROM review ORDER BY id DESC");
                     <li><a href="index.php">Home</a></li>
                     <li><a href="#about">About</a></li>
                     <li><a href="#contact">Contact</a></li>
-                    <?php
-                    if($_SESSION && $_SESSION['is_signin']):
-                    ?>
-                    <li><a href="setting.php">Setting</a></li>
-                    <?php
-                    endif;
-                    ?>
+                    <a href="signin.php" class="button-primary btn-signin" id="sign-in">Sign In</a>
                 </div>
             </ul>
-            <?php
-                    if(!$_SESSION):
-                    ?>
-                    <a href="signin.php" class="button-primary btn-signin" id="sign-in">Sign In</a>
-                    <?php
-                    endif;
-                    ?>
+        
         </nav>
         <div class="content text-primary" id="header-text" style="margin-top: 20vh; padding: 50px;">
             <h2 style="font-size: 3em;">Simpan kenangan indah anda</h2>
@@ -131,6 +130,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM review ORDER BY id DESC");
                 </div>
             </div>
         </section>
+        
         <section style="padding: 20px; margin-top: 10vh;">
             <h1 style="font-size: 2em;">Review</h1>
             <div class="flex review-data" style="justify-content: space-evenly; margin-top: 5vh;">

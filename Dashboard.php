@@ -3,7 +3,7 @@
 include_once("koneksi.php");
 
 // AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
-$result = mysqli_query($mysqli, "SELECT * FROM linimasa ORDER BY id DESC");
+$result = mysqli_query($koneksi, "SELECT * FROM linimasa ORDER BY id DESC");
 ?>
 
 <html>
@@ -46,7 +46,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM linimasa ORDER BY id DESC");
         </div>
     </header>
 
-    <main>
+    <main style="padding: 20px;  margin-top: 50vh;">
         <section style="padding: 20px; margin-top: 10vh; position: relative;" id="linimasa">
             <div class="flex" style="justify-content: space-between;">
                 <h1 style="font-size: 2em;">Linimasa</h1>
@@ -78,22 +78,22 @@ $result = mysqli_query($mysqli, "SELECT * FROM linimasa ORDER BY id DESC");
             ?>
 
             </div>
-        </section style="padding: 20px; margin-top: 10vh; position: relative;" id="review">
+        </section>
         
-        <hr style="width: 70%; margin: auto;  margin-top: 10vh;">
+        <hr style="width: 70%; margin: auto;  margin-top: 10vh; margin-bottom: 10vh;">
 
-        <section>
+        <section style="padding: 20px; margin-top: 10vh; position: relative;" id="review">
             <div class="flex" style="justify-content: space-between;">
                 <h1 style="font-size: 2em;">Review</h1>
             </div>
             <div>
                 <form action="review_operator.php" method="POST">
-                    <div class="form-group">
-                        <label class="label" for="">Berikan penilaian Anda untuk kami: </label>
-                        <input type="text" name="review" required class="form-upload" />
+                    <div style="margin-top: 20px; padding: 20px; text-align: left;">
+                        <label style="margin-bottom:25px;" class="label" for="">Berikan penilaian Anda untuk situs kami: </label>
+                        <input type="text" name="review" required class="login-form" />
                     </div>
-                    <div>
-                        <button type="submit" name="save_review" class="button button-action">Submit</button>
+                    <div style="padding: 5px 20px;">
+                        <button style="padding: 15px 30px;" type="submit" name="save_review" class="button button-action">Submit</button>
                     </div>
                 </form>
             </div>
@@ -138,7 +138,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM linimasa ORDER BY id DESC");
         // get previous height
         let prevHeight = window.pageYOffset;
 
-        if (currentHeight > 350) {
+        if (currentHeight > 300) {
             // handling navbar when scroll up by adding a class
             document.getElementById('navbar').classList.add('bg-primary')
             document.getElementById('navbar').classList.remove('bg-transparent')
@@ -147,7 +147,7 @@ $result = mysqli_query($mysqli, "SELECT * FROM linimasa ORDER BY id DESC");
             document.getElementById('hamburger').classList.add('text-seccondary')
             document.getElementById('hamburger').classList.remove('text-primary')
 
-        } else if (currentHeight < 350) {
+        } else if (currentHeight < 300) {
             // handling navbar when scroll down by adding a class
             document.getElementById('logo').classList.remove('text-seccondary')
             document.getElementById('logo').classList.add('text-primary')
