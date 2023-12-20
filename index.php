@@ -1,6 +1,4 @@
 <?php
-session_start();
-
 // AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
 include_once("koneksi.php");
 $result = mysqli_query($koneksi, "SELECT * FROM review ORDER BY id DESC");
@@ -131,7 +129,7 @@ if ($_SESSION && $_SESSION['is_signin']) {
 
                 <?php
                 // Check if $result is set and not null
-                if (isset($result) && $result) {
+                if ($result) {
                     // Fetch rows as long as there are results
                     while ($res = mysqli_fetch_array($result)) {
                         ?>

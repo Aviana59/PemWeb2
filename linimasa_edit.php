@@ -1,11 +1,15 @@
-<?php// panggil koneksi ke database
+<?php
+// panggil koneksi ke database
   require_once 'koneksi.php';
+  $data = $linimasa->edit($_GET['id']);
 
   // jika user klik tombol login
   if(isset($_POST['kirim'])){
-
     // jalankan fungsi login dari class auth
-    if($linimasa->edit($_POST)){
+
+    $query = $linimasa->update($_POST, $_GET['id']);
+
+    if($query){
 
       // redirect ke index
       header("location: dashboard.php");
@@ -81,18 +85,19 @@
     <main style="margin-top: 50vh;">
 <form method="post" >
          <div class="form-upload">
-            <p>Pilih Foto Anda</p>
+            <p>Edit Foto Anda</p>
             <label class="custom-file-upload">
-                <input type="file" id="file" name="file" onchange="checkFileExtension(this)"/>
+                <input type="file" id="file" name="file" value="<?=$data['file']?>" onchange="checkFileExtension(this)"/>
                 <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M19 13h-6v6h-2v-6H5v-2h6V5h2v6h6v2z"/></svg>
                 <span>Choose a file</span>
             </label>
             <p>Masukkan tanggal</p>
-            <input type="date" name="tanggal"/>
+            <input type="hidden" name="foto" value="<?=$data['file']?>"/>
+            <input type="date" name="tanggal" value="<?=$data['tanggal']?>"/>
             <p>Tambahkan judul</p>
-            <input type="text" name="judul"/>
+            <input type="text" name="judul" value="<?=$data['judul']?>"/>
             <p>Deskripsikan moment Anda</p>
-            <input type="text" name="deskripsi"/>
+            <input type="text" name="deskripsi" value="<?=$data['deskripsi']?>"/>
          </div>   
         
         <button type="submit" name="kirim" class="button-primary"

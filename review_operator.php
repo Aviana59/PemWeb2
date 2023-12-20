@@ -1,5 +1,4 @@
 <?php
-session_start();
 
 include('koneksi.php');
 include_once('review_controller.php');

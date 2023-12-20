@@ -28,10 +28,13 @@ class Auth {
     
     public function signin($username, $password){
         // cari data dengan username dan password seperti yang diberikan
-        $user = $this->db->query("SELECT username FROM user WHERE username = '$username' AND password = '$password'");
+        $query = $this->db->query("SELECT id, username FROM user WHERE username = '$username' AND password = '$password'");
+        $user = mysqli_fetch_assoc($query);
+        
 
         // jika data jumlahnya lebih dari 0 atau data ny ada
-        if(mysqli_num_rows($user) > 0){
+        if(mysqli_num_rows($query) > 0){
+            $_SESSION["id"] = $user['id'];
             $_SESSION["user"] = $username;
             $_SESSION["is_signin"] = true;
 

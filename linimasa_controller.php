@@ -24,8 +24,9 @@ class LinimasaController
         if ($this->isImageFile($file)) {
             //var_dump(move_uploaded_file($_FILES['file']['tmp_name'], 'image/'.$_FILES['file']['name']));
             
+            $id = $_SESSION['id'];
             if (move_uploaded_file($_FILES['file']['tmp_name'], 'image/'.$_FILES['file']['name'])){
-                $linimasaQuery = "INSERT INTO linimasa (file, tanggal, judul, deskripsi) VALUES ('$file', '$tanggal', '$judul', '$deskripsi')";
+                $linimasaQuery = "INSERT INTO linimasa (id_user, file, tanggal, judul, deskripsi) VALUES ('$id', '$file', '$tanggal', '$judul', '$deskripsi')";
                 $result = $this->conn->query($linimasaQuery);
             } else {
                 return false;
@@ -69,8 +70,8 @@ class LinimasaController
     public function edit($id)
     {
         // Implementasi operasi SELECT untuk mendapatkan data tertentu dari tabel "linimasa"
-        $linimasa_id = mysqli_real_escape_string($this->conn,$id);
-        $linimasaQuery = "SELECT FROM linimasa WHERE id='$linimasa_id' LIMIT 1";
+        $linimasa_id = $id;
+        $linimasaQuery = "SELECT * FROM linimasa WHERE id='$linimasa_id' LIMIT 1";
         $result = $this->conn->query($linimasaQuery);
         if($result && $result->num_rows == 1)
         {
@@ -85,15 +86,15 @@ class LinimasaController
     public function update($inputData, $id)
 {
     // Implementasi operasi UPDATE untuk tabel "linimasa"
-    $linimasa_id = mysqli_real_escape_string($this->conn, $id);
-    $foto = $inputData['file'];
+    $linimasa_id = $id;
+    $foto = $inputData['foto'];
     $tanggal = $inputData['tanggal'];
     $judul = $inputData['judul'];
     $deskripsi = $inputData['deskripsi'];
 
     // Periksa apakah file yang diunggah adalah gambar
     if ($this->isImageFile($foto)) {
-        $linimasaQuery = "UPDATE linimasa SET foto='$foto', tanggal='$tanggal', judul='$judul', deskripsi='$deskripsi' WHERE id='$linimasa_id' LIMIT 1";
+        $linimasaQuery = "UPDATE linimasa SET file='$foto', tanggal='$tanggal', judul='$judul', deskripsi='$deskripsi' WHERE id='$linimasa_id' LIMIT 1";
         $result = $this->conn->query($linimasaQuery);
 
         if ($result) {
@@ -111,9 +112,11 @@ class LinimasaController
     public function delete($id)
     {
         // Implementasi operasi DELETE untuk tabel "linimasa"
-        $linimasa_id = mysqli_real_escape_string($this->conn,$id);
-        $linimasaDeleteQuery = "DELETE FROM linimasa WHERE id='$linimasa_id' LIMIT 1";
+        
+        $linimasa_id = $id;
+        $linimasaDeleteQuery = "DELETE FROM linimasa WHERE id=$linimasa_id LIMIT 1";
         $result = $this->conn->query($linimasaDeleteQuery);
+        
         if ($result)
         {
             return true;

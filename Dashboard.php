@@ -4,6 +4,17 @@ include_once("koneksi.php");
 
 // AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
 $result = mysqli_query($koneksi, "SELECT * FROM linimasa ORDER BY id DESC");
+
+if($_POST){
+    $result = $linimasa->delete($_POST['delete_linimasa']);
+    
+    if($result){
+        header("Location: Dashboard.php");
+    } else {
+        echo'ERROR';
+        die;
+    }
+}
 ?>
 
 <html>
@@ -52,13 +63,13 @@ $result = mysqli_query($koneksi, "SELECT * FROM linimasa ORDER BY id DESC");
                 <h1 style="font-size: 2em;">Linimasa</h1>
                 <a href="upload.php" class="button button-seccondary center">Tambah linimasa &plus;</a>
             </div>
-            <div class="flex linimasa-data" style="flex-warp:warp; justify-content: space-evenly;">
+            <div class="linimasa-data" style="display: flex; flex-warp:warp; justify-content: space-evenly;">
 
             <?php
                 while ($res = mysqli_fetch_array($result)) 
                 {
                     ?>
-                    <div class="card" style="width:25%">
+                    <div class="card" style="width:250px">
                         <img src="image/<?php echo $res['file']; ?>" alt="Avatar" style="width:100%">
                         <div class="container">
                             <h4><b><?php echo $res['judul']; ?></b></h4>
@@ -66,7 +77,7 @@ $result = mysqli_query($koneksi, "SELECT * FROM linimasa ORDER BY id DESC");
                             <p><?php echo $res['deskripsi'];?></p>
                             <div class="action" style="margin-top: 2vh;">
                                 <a href="linimasa_edit.php?id=<?php echo $res['id']; ?>" class="button-action">Edit &rarr;</a>
-                                <form action="linimasa_controller.php" method="POST">
+                                <form method="POST">
                                     <button type="submit" name="delete_linimasa" value="<?= $res['id'] ?>" class="button-action">Delete</button>
                                 </form>
                                 <a href="assets/file/<?php echo $res['id']; ?>" Download class="button-action">Download &darr;</a>
