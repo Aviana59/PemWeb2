@@ -10,7 +10,7 @@
     if($linimasa->create($_POST)){
 
       // redirect ke index
-      header("location: index.php");
+      header("location: dashboard.php");
     } else {
         $_SESSION['message'] = 'ERROR';
     }

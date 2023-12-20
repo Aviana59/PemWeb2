@@ -10,7 +10,7 @@
     if($auth->signin($_POST['username'],$_POST['password'])){
 
       // redirect ke index
-      header("location: index.php");
+      header("location: dashboard.php");
     }
   }
 ?>
