@@ -2,7 +2,7 @@
 
 session_start();
 
-include('dbconn.php');
+include('koneksi.php');
 include('LinimasaController.php');
 
 $db = new DatabaseConnection;
@@ -12,7 +12,7 @@ $linimasa = new LinimasaController($db->conn);
 if (isset($_POST['kirim'])) 
 {
     $inputData = [
-        'foto' => mysqli_real_escape_string($db->conn, $_FILES["image"]["name"]),
+        'file' => mysqli_real_escape_string($db->conn, $_FILES["image"]["name"]),
         'tanggal' => mysqli_real_escape_string($db->conn, $_POST['tanggal']),
         'judul' => mysqli_real_escape_string($db->conn, $_POST['judul']),
         'deskripsi' => mysqli_real_escape_string($db->conn, $_POST['deskripsi']),
@@ -39,7 +39,7 @@ if (isset ($_POST['update_linimasa']))
 {
     $id = mysqli_real_escape_string($db->conn,$_POST['linimasa_id']);
     $inputData = [
-        'foto' => mysqli_real_escape_string($db->conn, $_FILES["image"]["name"]),
+        'file' => mysqli_real_escape_string($db->conn, $_FILES["image"]["name"]),
         'tanggal' => mysqli_real_escape_string($db->conn, $_POST['tanggal']),
         'judul' => mysqli_real_escape_string($db->conn, $_POST['judul']),
         'deskripsi' => mysqli_real_escape_string($db->conn, $_POST['deskripsi']),

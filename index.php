@@ -1,5 +1,11 @@
 <?php
 session_start()
+
+// INCLUDE KONEKSI KE DATABASE
+include_once("koneksi.php");
+
+// AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
+$result = mysqli_query($mysqli, "SELECT * FROM review ORDER BY id DESC");
 ?>
 
 <!DOCTYPE html>
@@ -128,42 +134,24 @@ session_start()
         <section style="padding: 20px; margin-top: 10vh;">
             <h1 style="font-size: 2em;">Review</h1>
             <div class="flex review-data" style="justify-content: space-evenly; margin-top: 5vh;">
-                <div class="card-review flex" style="align-items: center;">
-                    <div class="icon">
-                        <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
+                
+                <?php
+                while ($res = mysqli_fetch_array($result)) 
+                {
+                    ?>
+                    <div class="card-review flex" style="align-items: center;">
+                        <div class="icon">
+                            <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
+                        </div>
+                        <div class="comments">
+                            <strong><?php echo $res['username']; ?></strong>
+                            <p><?php echo $res['review'];?></p>
+                        </div>
                     </div>
-                    <div class="comments">
-                        <strong>User</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card-review flex" style="align-items: center;">
-                    <div class="icon">
-                        <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
-                    </div>
-                    <div class="comments">
-                        <strong>User</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. </p>
-                    </div>
-                </div>
-                <div class="card-review flex" style="align-items: center;">
-                    <div class="icon">
-                        <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
-                    </div>
-                    <div class="comments">
-                        <strong>User</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </div>
-                <div class="card-review flex" style="align-items: center;">
-                    <div class="icon">
-                        <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
-                    </div>
-                    <div class="comments">
-                        <strong>User</strong>
-                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
-                    </div>
-                </div>
+                    <?php
+                }
+                ?>
+
             </div>
         </section>
     </main>

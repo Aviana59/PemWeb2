@@ -55,36 +55,47 @@ $result = mysqli_query($mysqli, "SELECT * FROM linimasa ORDER BY id DESC");
             <div class="flex linimasa-data" style="justify-content: space-evenly;">
 
             <?php
-            while ($res = mysqli_fetch_array($result)) {
-                ?>
-                <div class="card">
-                    <img src="assets/file/<?php echo $res['gambar']; ?>" alt="Avatar" style="width:100%">
-                    <div class="container">
-                        <h4><b><?php echo $res['judul']; ?></b></h4>
-                        <small><?php echo $res['tanggal']; ?></small>
-                        <p><?php echo $res['deskripsi'];?></p>
-                        <div class="action" style="margin-top: 2vh;">
-                            <a href="linimasa_edit.php?id=<?php echo $res['id']; ?>" class="button-action">Edit &rarr;</a>
-                            <form action="linimasa_controller.php" method="POST">
-                                <button type="submit" name="delete_linimasa" value="<?= $row['id'] ?>" class="button-action">Delete</button>
-                            </form>
-                            <a href="assets/file/<?php echo $res['id']; ?>" Download class="button-action">Download &darr;</a>
+                while ($res = mysqli_fetch_array($result)) 
+                {
+                    ?>
+                    <div class="card">
+                        <img src="assets/file/<?php echo $res['gambar']; ?>" alt="Avatar" style="width:100%">
+                        <div class="container">
+                            <h4><b><?php echo $res['judul']; ?></b></h4>
+                            <small><?php echo $res['tanggal']; ?></small>
+                            <p><?php echo $res['deskripsi'];?></p>
+                            <div class="action" style="margin-top: 2vh;">
+                                <a href="linimasa_edit.php?id=<?php echo $res['id']; ?>" class="button-action">Edit &rarr;</a>
+                                <form action="linimasa_controller.php" method="POST">
+                                    <button type="submit" name="delete_linimasa" value="<?= $row['id'] ?>" class="button-action">Delete</button>
+                                </form>
+                                <a href="assets/file/<?php echo $res['id']; ?>" Download class="button-action">Download &darr;</a>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <?php
-            }
+                    <?php
+                }
             ?>
 
             </div>
         </section style="padding: 20px; margin-top: 10vh; position: relative;" id="review">
+        
+        <hr style="width: 70%; margin: auto;  margin-top: 10vh;">
 
         <section>
             <div class="flex" style="justify-content: space-between;">
                 <h1 style="font-size: 2em;">Review</h1>
             </div>
             <div>
-                
+                <form action="review_operator.php" method="POST">
+                    <div class="form-group">
+                        <label class="label" for="">Berikan penilaian Anda untuk kami: </label>
+                        <input type="text" name="review" required class="form-upload" />
+                    </div>
+                    <div>
+                        <button type="submit" name="save_review" class="button button-action">Submit</button>
+                    </div>
+                </form>
             </div>
         </section>
     </main>

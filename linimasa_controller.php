@@ -12,14 +12,14 @@ class LinimasaController
     public function create($inputData)
     {
         // Implementasi operasi INSERT untuk tabel "linimasa"
-        $foto = $inputData['file'];
+        $file = $inputData['file'];
         $tanggal = $inputData['tanggal'];
         $judul = $inputData['judul'];
         $deskripsi = $inputData['deskripsi'];
 
         // Periksa apakah file yang diunggah adalah gambar
-        if ($this->isImageFile($foto)) {
-            $linimasaQuery = "INSERT INTO linimasa (file, tanggal, judul, deskripsi) VALUES ('$foto', '$tanggal', '$judul', '$deskripsi')";
+        if ($this->isImageFile($file)) {
+            $linimasaQuery = "INSERT INTO linimasa (file, tanggal, judul, deskripsi) VALUES ('$file', '$tanggal', '$judul', '$deskripsi')";
             $result = $this->conn->query($linimasaQuery);
 
             if ($result) {
