@@ -1,23 +1,17 @@
 <?php
-session_start()
-?>
-<?php
-    if(!$_SESSION):
-        // INCLUDE KONEKSI KE DATABASE
-        include_once("koneksi.php");
+session_start();
 
-        // AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
-        $result = mysqli_query($koneksi, "SELECT * FROM review ORDER BY id DESC");
-        endif;
-    ?>
-<?php
-    // MEMERIKSA KONDISI APAKAH SUDAH LOGIN
-    if($_SESSION && $_SESSION['is_signin']):
-        // DIRECT HALAMAN KE DASHBOARD JIKA SUDAH LOGIN
-        header("Location: Dashboard.php");
-        exit(); // Pastikan untuk menghentikan eksekusi skrip setelah mengarahkan pengguna
-    endif;
-    ?>
+// AMBIL DATA DARI DATABASE BERDASARKAN DATA TERAKHIR DI INPUT
+include_once("koneksi.php");
+$result = mysqli_query($koneksi, "SELECT * FROM review ORDER BY id DESC");
+
+// MEMERIKSA KONDISI APAKAH SUDAH LOGIN
+if ($_SESSION && $_SESSION['is_signin']) {
+    // DIRECT HALAMAN KE DASHBOARD JIKA SUDAH LOGIN
+    header("Location: Dashboard.php");
+    exit(); // Pastikan untuk menghentikan eksekusi skrip setelah mengarahkan pengguna
+}
+?>
     
 <!DOCTYPE html>
 <html lang="en">
