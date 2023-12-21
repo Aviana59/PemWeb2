@@ -3,16 +3,14 @@
   require_once 'koneksi.php';
   $data = $linimasa->edit($_GET['id']);
 
-  // jika user klik tombol login
   if(isset($_POST['kirim'])){
-    // jalankan fungsi login dari class auth
 
     $query = $linimasa->update($_POST, $_GET['id']);
 
     if($query){
 
-      // redirect ke index
       header("location: dashboard.php");
+      
     } else {
         $_SESSION['message'] = 'ERROR';
     }

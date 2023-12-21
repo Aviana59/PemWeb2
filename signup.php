@@ -3,14 +3,11 @@
   // panggil koneksi ke database
   require_once 'koneksi.php';
 
-  // jika user klik tombol login
   if(isset($_POST['kirim'])){
 
-    // jalankan fungsi login dari class auth
     if($auth->signup($_POST)){
 
-      // redirect ke index
-      header("location: index.php");
+      header("location: signin.php");
     } else {
         $_SESSION['message'] = 'ERROR';
     }

@@ -22,7 +22,6 @@ class LinimasaController
 
         // Periksa apakah file yang diunggah adalah gambar
         if ($this->isImageFile($file)) {
-            //var_dump(move_uploaded_file($_FILES['file']['tmp_name'], 'image/'.$_FILES['file']['name']));
             
             $id = $_SESSION['id'];
             if (move_uploaded_file($_FILES['file']['tmp_name'], 'image/'.$_FILES['file']['name'])){

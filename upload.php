@@ -1,15 +1,11 @@
 <?php 
 
-  // panggil koneksi ke database
   require_once 'koneksi.php';
 
-  // jika user klik tombol login
   if(isset($_POST['kirim'])){
 
-    // jalankan fungsi login dari class auth
     if($linimasa->create($_POST)){
 
-      // redirect ke index
       header("location: dashboard.php");
     } else {
         $_SESSION['message'] = 'ERROR';

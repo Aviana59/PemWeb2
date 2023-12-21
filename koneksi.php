@@ -1,9 +1,9 @@
 <?php 
  
 	 $host = "localhost";
-	 $uname = "root"; // username database mu
-	 $pass = ""; // password database mu klo ada
-	 $db = "alokasa"; //sesuaiin sm tabel mu
+	 $uname = "root"; // username database
+	 $pass = ""; // password database
+	 $db = "alokasa"; //nama database
 	
 	 $koneksi = mysqli_connect($host, $uname, $pass, $db);
 	 if($koneksi){
