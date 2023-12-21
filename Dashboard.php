@@ -69,13 +69,13 @@ if($_POST){
                 while ($res = mysqli_fetch_array($result)) 
                 {
                     ?>
-                    <div class="card" style="width:250px">
+                    <div class="card" style="width:400px">
                         <img src="image/<?php echo $res['file']; ?>" alt="Avatar" style="width:100%">
                         <div class="container">
                             <h4><b><?php echo $res['judul']; ?></b></h4>
                             <small><?php echo $res['tanggal']; ?></small>
                             <p><?php echo $res['deskripsi'];?></p>
-                            <div class="flex action" style="margin-top: 2vh;">
+                            <div class="action" style="margin-top: 2vh; display: flex;">
                                 <a href="linimasa_edit.php?id=<?php echo $res['id']; ?>" class="button-action">Edit &rarr;</a>
                                 <form method="POST">
                                     <button type="submit" name="delete_linimasa" value="<?= $res['id'] ?>" class="button-action">Delete</button>
