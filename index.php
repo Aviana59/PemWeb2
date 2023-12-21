@@ -118,6 +118,37 @@ if ($_SESSION && $_SESSION['is_signin']) {
                 </div>
             </div>
         </section>
+        
+        <section style="padding: 20px; margin-top: 10vh;">
+            <h1 style="font-size: 2em;">Review</h1>
+            <div class="flex review-data" style="justify-content: space-evenly; margin-top: 5vh;">
+
+                <?php
+                // Check if $result is set and not null
+                if ($result) {
+                    // Fetch rows as long as there are results
+                    while ($res = mysqli_fetch_array($result)) {
+                        ?>
+                        <div class="card-review flex" style="align-items: center;">
+                            <div class="icon">
+                                <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
+                            </div>
+                            <div class="comments">
+                                <strong><?php echo $res['id_user']; ?></strong>
+                                <p><?php echo $res['review']; ?></p>
+                            </div>
+                        </div>
+                        <?php
+                    }
+                } else {
+                    // Display message if there are no reviews
+                    echo "<p>Belum ada ulasan</p>";
+                }
+                ?>
+
+            </div>
+        </section>
+
 
     </main>
 
