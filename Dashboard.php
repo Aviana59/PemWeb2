@@ -45,7 +45,6 @@ if($_POST){
                 <!-- NAVIGATION MENUS -->
                 <div class="menu">
                     <li><a href="Dashboard.php">Home</a></li>
-                    <li><a href="#review">Review</a></li>
                     <li><a href="#contact">Contact</a></li>
                     <li><a href="setting.php">Setting</a></li>
                 </div>
