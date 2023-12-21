@@ -10,10 +10,12 @@
 		// panggil class auth
 		include_once 'Auth.php';
 		include_once 'linimasa_controller.php';
+		include_once 'review_controller.php';
 
 		// inisialisasi class auth
 		$auth = new Auth($koneksi);
 		$linimasa= new LinimasaController($koneksi);
+		$reviews = new ReviewController($koneksi);
 	 } else {
 		echo 'gagal koneksi';
 	 }

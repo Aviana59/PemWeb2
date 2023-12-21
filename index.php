@@ -138,7 +138,7 @@ if ($_SESSION && $_SESSION['is_signin']) {
                                 <img src="assets/images/profile.png" alt="" srcset="" width="60vh">
                             </div>
                             <div class="comments">
-                                <strong><?php echo $res['username']; ?></strong>
+                                <strong><?php echo $res['id_user']; ?></strong>
                                 <p><?php echo $res['review']; ?></p>
                             </div>
                         </div>
