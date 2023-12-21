@@ -75,7 +75,7 @@ if($_POST){
                             <h4><b><?php echo $res['judul']; ?></b></h4>
                             <small><?php echo $res['tanggal']; ?></small>
                             <p><?php echo $res['deskripsi'];?></p>
-                            <div class="action" style="margin-top: 2vh;">
+                            <div class="flex action" style="margin-top: 2vh;">
                                 <a href="linimasa_edit.php?id=<?php echo $res['id']; ?>" class="button-action">Edit &rarr;</a>
                                 <form method="POST">
                                     <button type="submit" name="delete_linimasa" value="<?= $res['id'] ?>" class="button-action">Delete</button>
@@ -88,25 +88,6 @@ if($_POST){
                 }
             ?>
 
-            </div>
-        </section>
-        
-        <hr style="width: 70%; margin: auto;  margin-top: 10vh; margin-bottom: 10vh;">
-
-        <section style="padding: 20px; margin-top: 10vh; position: relative;" id="review">
-            <div class="flex" style="justify-content: space-between;">
-                <h1 style="font-size: 2em;">Review</h1>
-            </div>
-            <div>
-                <form action="review_operator.php" method="POST">
-                    <div style="margin-top: 20px; padding: 20px; text-align: left;">
-                        <label style="margin-bottom:25px;" class="label" for="">Berikan penilaian Anda untuk situs kami: </label>
-                        <input type="text" name="review" required class="login-form" />
-                    </div>
-                    <div style="padding: 5px 20px;">
-                        <button style="padding: 15px 30px;" type="submit" name="save_review" class="button button-action">Submit</button>
-                    </div>
-                </form>
             </div>
         </section>
     </main>
