@@ -3,8 +3,7 @@ class Auth {
 
     // Set local variabel to store db connection from 'koneksi.php'
     private $db;
-    
-    //construct function : fungsi yang otomatis dijalankan ketika class ini digunakan / dipanggil
+        //construct function : fungsi yang otomatis dijalankan ketika class ini digunakan / dipanggil
     public function __construct($koneksi){
         $this->db = $koneksi;
         session_start();
